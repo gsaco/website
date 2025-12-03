@@ -1,0 +1,82 @@
+/* Simple, modern stylesheet for an academic personal site */
+:root{
+  --bg: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --accent: #0b3d91; /* dark blue accent */
+  --card: #f8fafc;
+  --radius: 8px;
+}
+
+.dark{
+  --bg: #0b1220;
+  --text: #e6eef8;
+  --muted: #9aa7bc;
+  --accent: #66a3ff;
+  --card: #071021;
+}
+
+/* Base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{max-width:980px;margin:0 auto;padding:24px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
+
+.brand .logo{font-weight:700;color:var(--text);text-decoration:none;font-size:1.05rem}
+.subtitle{margin:0;color:var(--muted);font-size:0.9rem}
+
+.main-nav{display:flex;align-items:center;gap:12px}
+.main-nav a{color:var(--accent);text-decoration:none;padding:6px 8px;border-radius:6px}
+.main-nav a:hover{background:rgba(11,61,145,0.06)}
+.theme-toggle{background:transparent;border:none;font-size:1.05rem;cursor:pointer;padding:6px}
+
+.hero{padding:18px 0}
+.hero h1{margin:0;font-size:1.8rem}
+.lead{font-size:1.05rem;margin-top:8px}
+.meta{color:var(--muted);margin-top:8px}
+
+h1,h2,h3{color:var(--text);margin-top:0}
+h2{margin-bottom:8px}
+
+.muted{color:var(--muted)}
+
+.two-col{display:block}
+.two-col > div{margin-bottom:18px}
+
+.card{background:var(--card);padding:12px;border-radius:var(--radius);margin-bottom:12px}
+
+.links-grid{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+.btn[aria-disabled="true"]{opacity:0.6;pointer-events:none}
+
+.site-footer{border-top:1px solid rgba(0,0,0,0.05);padding:18px 0;margin-top:28px;text-align:center;color:var(--muted)}
+
+/* Contact form */
+.contact-form label{display:block;margin-bottom:10px}
+.contact-form input,.contact-form textarea{width:100%;padding:8px;border:1px solid #d1d5db;border-radius:6px;background:transparent;color:var(--text)}
+
+/* Responsive layout */
+@media(min-width:880px){
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+  .main-nav a{padding:8px 10px}
+}
+
+/* Small helpers */
+.placeholder{color:var(--muted);font-style:italic}
+
+/* Accessibility focus styles */
+a:focus,button:focus,input:focus,textarea:focus{outline:3px solid rgba(11,61,145,0.15);outline-offset:2px}
+
+/* Keep link color readable */
+a{color:var(--accent)}
+
+/* End of stylesheet */
