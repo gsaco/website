@@ -1,73 +1,308 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Coursework — Gabriel Saco Alvarado</title>
-  <meta name="description" content="Advanced mathematics, statistics, and economics coursework.">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coursework & Certifications — Gabriel Saco Alvarado</title>
+  <meta name="description" content="Advanced mathematics, statistics, and economics coursework and certifications.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <a href="/" class="logo">Gabriel Saco Alvarado</a>
-      </div>
-      <nav class="main-nav" aria-label="Main navigation">
-        <button id="theme-toggle-top4" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">☾</button>
-        <a href="/">Home</a>
-        <a href="/research.html">Research</a>
-        <a href="/teaching.html">Teaching</a>
-        <a href="/cv.html">CV</a>
-        <a href="/projects.html">Projects &amp; Software</a>
-        <a href="/coursework.html" aria-current="page">Coursework</a>
-        <a href="/contact.html">Contact</a>
+  <div class="bg-animated"></div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="brand-icon">GS</span>
+        <span>Gabriel Saco</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navbar-menu">
+        <a href="index.html" class="navbar-link">Home</a>
+        <a href="research.html" class="navbar-link">Research</a>
+        <a href="projects.html" class="navbar-link">Projects</a>
+        <a href="coursework.html" class="navbar-link active">Coursework</a>
+        <a href="cv.html" class="navbar-link">CV</a>
+        <a href="notes.html" class="navbar-link">Notes</a>
+        <a href="contact.html" class="navbar-link">Contact</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
       </nav>
     </div>
   </header>
 
-  <main class="container main-content">
-    <h1>Coursework &amp; Certifications</h1>
-    <p class="muted">Select advanced courses and certifications relevant to mathematics, statistics, and econometrics.</p>
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="reveal">Coursework & Certifications</h1>
+      <p class="lead reveal">Advanced courses in mathematics, statistics, econometrics, and professional certifications.</p>
+    </div>
+  </section>
 
-    <section class="two-col">
-      <div>
-        <h2>Advanced Mathematics &amp; Statistics</h2>
-        <p class="muted">Placeholder list of advanced courses.</p>
-        <ul>
-          <li>Stochastic Processes</li>
-          <li>Real Analysis</li>
-          <li>Convex Analysis</li>
-          <li>Numerical Methods</li>
-          <li>Advanced Econometrics (placeholder)</li>
-        </ul>
+  <!-- Advanced Mathematics & Statistics -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: left;">
+        <h2>📐 Advanced Mathematics & Statistics</h2>
+        <p>Rigorous mathematical training that forms the foundation for econometric research</p>
       </div>
 
-      <div>
-        <h2>Economics &amp; Finance Courses</h2>
-        <p class="muted">Add course list and short topics/keywords here.</p>
-        <ul>
-          <li>Microeconomics / Macroeconomics (placeholder)</li>
-          <li>Financial Economics (placeholder)</li>
-        </ul>
+      <div class="card reveal">
+        <table class="coursework-table">
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Topics & Keywords</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Stochastic Processes</strong></td>
+              <td>Markov chains, Poisson processes, Brownian motion, martingales, ergodic theory</td>
+            </tr>
+            <tr>
+              <td><strong>Real Analysis</strong></td>
+              <td>Measure theory, Lebesgue integration, convergence theorems, Lp spaces, functional analysis</td>
+            </tr>
+            <tr>
+              <td><strong>Convex Analysis</strong></td>
+              <td>Convex sets, convex functions, duality, optimization, subdifferentials</td>
+            </tr>
+            <tr>
+              <td><strong>Numerical Methods</strong></td>
+              <td>Root finding, interpolation, numerical integration, ODEs, optimization algorithms</td>
+            </tr>
+            <tr>
+              <td><strong>Linear Algebra</strong></td>
+              <td>Matrix decompositions, eigenvalues, spectral theory, multilinear algebra</td>
+            </tr>
+            <tr>
+              <td><strong>Probability Theory</strong></td>
+              <td>Probability spaces, random variables, limit theorems, conditional expectation</td>
+            </tr>
+            <tr>
+              <td><strong>Mathematical Statistics</strong></td>
+              <td>Estimation theory, hypothesis testing, asymptotic theory, sufficiency</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>Certifications</h2>
-      <p class="muted">Summaries of completed online specializations and certifications.</p>
-      <ul>
-        <li>Financial Engineering and Risk Management — Columbia University (Mar–Dec 2024)</li>
-        <li>Machine Learning — Stanford University (Mar–Dec 2024)</li>
-        <li>Data Scientist Career Track — DataCamp (Jan–Oct 2024)</li>
-      </ul>
-    </section>
-  </main>
+  <!-- Economics & Finance -->
+  <section class="section" style="background: var(--bg-tertiary);">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: left;">
+        <h2>📈 Economics & Finance</h2>
+        <p>Core and advanced courses in economic theory and quantitative finance</p>
+      </div>
 
-  <footer class="site-footer">
-    <div class="container">&copy; 2025 Gabriel Saco Alvarado</div>
+      <div class="grid grid-2 reveal">
+        <div class="card">
+          <h4 class="mb-md">Universidad del Pacífico</h4>
+          <table class="coursework-table">
+            <thead>
+              <tr>
+                <th>Course</th>
+                <th>Topics</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Microeconomics I-III</strong></td>
+                <td>Consumer theory, producer theory, general equilibrium, game theory</td>
+              </tr>
+              <tr>
+                <td><strong>Macroeconomics I-III</strong></td>
+                <td>Growth models, business cycles, monetary policy, DSGE models</td>
+              </tr>
+              <tr>
+                <td><strong>Econometrics I-II</strong></td>
+                <td>OLS, IV, panel data, time series, causal inference</td>
+              </tr>
+              <tr>
+                <td><strong>Financial Economics</strong></td>
+                <td>Asset pricing, portfolio theory, derivatives, risk management</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h4 class="mb-md">University of London (LSE)</h4>
+          <table class="coursework-table">
+            <thead>
+              <tr>
+                <th>Course</th>
+                <th>Topics</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Economics (LSE)</strong></td>
+                <td>Advanced micro/macro theory with LSE curriculum</td>
+              </tr>
+              <tr>
+                <td><strong>Finance (LSE)</strong></td>
+                <td>Corporate finance, investments, financial markets</td>
+              </tr>
+              <tr>
+                <td><strong>Quantitative Methods</strong></td>
+                <td>Statistical inference, regression analysis, econometric methods</td>
+              </tr>
+              <tr>
+                <td><strong>International Economics</strong></td>
+                <td>Trade theory, international finance, open economy macro</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>🏆 Professional Certifications</h2>
+        <p>Online specializations and professional development</p>
+      </div>
+
+      <div class="grid grid-2 stagger">
+        <div class="card reveal">
+          <div class="flex items-start gap-lg">
+            <div class="card-icon" style="flex-shrink: 0;">🏛️</div>
+            <div>
+              <h3 class="card-title">Financial Engineering and Risk Management</h3>
+              <p class="text-muted text-sm mb-sm">Columbia University (Coursera) · Mar – Dec 2024</p>
+              <p class="card-content">
+                Comprehensive specialization covering derivatives pricing, portfolio optimization, 
+                and risk management. Implemented simulations in Excel and Python to model risk scenarios 
+                and refine financial models.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Finance</span>
+                <span class="tag">Risk Management</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="flex items-start gap-lg">
+            <div class="card-icon" style="flex-shrink: 0;">🤖</div>
+            <div>
+              <h3 class="card-title">Machine Learning Specialization</h3>
+              <p class="text-muted text-sm mb-sm">Stanford University (Coursera) · Mar – Dec 2024</p>
+              <p class="card-content">
+                Andrew Ng's comprehensive ML course covering supervised and unsupervised learning. 
+                Built predictive models using linear/logistic regression and neural networks. 
+                Implemented clustering, anomaly detection, and recommender systems.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Deep Learning</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="flex items-start gap-lg">
+            <div class="card-icon" style="flex-shrink: 0;">📊</div>
+            <div>
+              <h3 class="card-title">Data Scientist Career Track</h3>
+              <p class="text-muted text-sm mb-sm">DataCamp · Jan – Oct 2024</p>
+              <p class="card-content">
+                Completed 90+ hours of training covering data analysis, experimental design, 
+                statistical inference, and machine learning with Python. Focused on practical 
+                applications to real-world data problems.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Data Science</span>
+                <span class="tag">Statistics</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="flex items-start gap-lg">
+            <div class="card-icon" style="flex-shrink: 0;">🌍</div>
+            <div>
+              <h3 class="card-title">IELTS Academic C1</h3>
+              <p class="text-muted text-sm mb-sm">IELTS – British Council · Mar 2023</p>
+              <p class="card-content">
+                Achieved Overall Band 7.0, demonstrating advanced English proficiency for academic 
+                and professional contexts. Certified C1 level on the Common European Framework.
+              </p>
+              <div class="card-tags">
+                <span class="tag">English</span>
+                <span class="tag">Academic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Gabriel Saco Alvarado</div>
+          <p>Undergraduate economist and aspiring researcher.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="GitHub">📦</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+            <a href="mailto:ga.sacoa@alum.up.edu.pe" aria-label="Email">📧</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Resources</div>
+          <ul class="footer-links">
+            <li><a href="coursework.html">Coursework</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Contact</div>
+          <ul class="footer-links">
+            <li>Lima, Peru</li>
+            <li><a href="mailto:ga.sacoa@alum.up.edu.pe">ga.sacoa@alum.up.edu.pe</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Gabriel Saco Alvarado.</p>
+      </div>
+    </div>
   </footer>
 
-  <script src="/assets/js/main.js"></script>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

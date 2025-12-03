@@ -1,106 +1,377 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>CV — Gabriel Saco Alvarado</title>
-  <meta name="description" content="Curriculum vitae of Gabriel Saco Alvarado.">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curriculum Vitae — Gabriel Saco Alvarado</title>
+  <meta name="description" content="Full CV of Gabriel Saco Alvarado: education, experience, skills, and certifications.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <a href="/" class="logo">Gabriel Saco Alvarado</a>
-      </div>
-      <nav class="main-nav" aria-label="Main navigation">
-        <button id="theme-toggle-top5" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">☾</button>
-        <a href="/">Home</a>
-        <a href="/research.html">Research</a>
-        <a href="/teaching.html">Teaching</a>
-        <a href="/cv.html" aria-current="page">CV</a>
-        <a href="/projects.html">Projects &amp; Software</a>
-        <a href="/coursework.html">Coursework</a>
-        <a href="/contact.html">Contact</a>
+  <div class="bg-animated"></div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="brand-icon">GS</span>
+        <span>Gabriel Saco</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navbar-menu">
+        <a href="index.html" class="navbar-link">Home</a>
+        <a href="research.html" class="navbar-link">Research</a>
+        <a href="projects.html" class="navbar-link">Projects</a>
+        <a href="coursework.html" class="navbar-link">Coursework</a>
+        <a href="cv.html" class="navbar-link active">CV</a>
+        <a href="notes.html" class="navbar-link">Notes</a>
+        <a href="contact.html" class="navbar-link">Contact</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
       </nav>
     </div>
   </header>
 
-  <main class="container main-content">
-    <h1>Curriculum Vitae</h1>
-    <p class="muted">A concise CV-style summary of education, experience, and skills. Use the button below to link to a downloadable PDF when available.</p>
-
-    <p><a class="btn" href="#" aria-disabled="true">Download PDF CV (placeholder)</a></p>
-
-    <section>
-      <h2>Education</h2>
-      <div class="card">
-        <h3>BSc Economics — Universidad del Pacifico</h3>
-        <p class="muted">July 2021 – December 2026</p>
-        <ul>
-          <li>Minor in Mathematics; Ranked top 10% of the program</li>
-        </ul>
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="reveal">Curriculum Vitae</h1>
+      <p class="lead reveal">Education, research experience, and professional background.</p>
+      <div class="reveal" style="margin-top: var(--spacing-lg);">
+        <a href="#" class="btn btn-primary" download>
+          ⬇️ Download PDF CV
+        </a>
       </div>
-      <div class="card">
-        <h3>BSc Economics and Finance — University of London (LSE)</h3>
-        <p class="muted">January 2024 – December 2026</p>
-        <ul>
-          <li>First Class Honours; Selected from 900+ students</li>
-        </ul>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>Experience</h2>
-      <h3>Research</h3>
-      <div class="card">
-        <h4>Research Assistant — CIUP</h4>
-        <p class="muted">Jan 2025 – Present</p>
-        <ul>
-          <li>Implement econometric models and prepare datasets</li>
-          <li>Contribute to reproducible research workflows</li>
-        </ul>
+  <!-- Education -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: left;">
+        <h2>🎓 Education</h2>
       </div>
 
-      <h3>Teaching</h3>
-      <div class="card">
-        <h4>Teaching Assistant — Universidad del Pacifico</h4>
-        <p class="muted">Jul 2025 – Present</p>
-        <ul>
-          <li>Mathematics III; Economics I — problem sessions and grading</li>
-        </ul>
+      <div class="cv-timeline stagger">
+        <div class="cv-entry card reveal">
+          <div class="cv-entry-header">
+            <div>
+              <h3 class="cv-entry-title">BSc in Economics</h3>
+              <p class="cv-entry-org">Universidad del Pacífico, Lima, Peru</p>
+            </div>
+            <div class="cv-entry-date">Jul 2021 – Dec 2026 (expected)</div>
+          </div>
+          <div class="cv-entry-content">
+            <ul>
+              <li>Ranked in the <strong>top 10%</strong> of the class</li>
+              <li>Focus on econometrics, quantitative methods, and economic research</li>
+              <li>Teaching Assistant for Mathematics III and Economics I</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry card reveal">
+          <div class="cv-entry-header">
+            <div>
+              <h3 class="cv-entry-title">BSc in Economics and Finance</h3>
+              <p class="cv-entry-org">University of London (LSE direction), Distance Learning</p>
+            </div>
+            <div class="cv-entry-date">Jan 2024 – Dec 2026 (expected)</div>
+          </div>
+          <div class="cv-entry-content">
+            <ul>
+              <li>Academic direction from the <strong>London School of Economics</strong></li>
+              <li>On track for <strong>First Class Honours</strong></li>
+              <li>Dual-degree program alongside Universidad del Pacífico</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>Volunteer & Consulting</h2>
-      <div class="card">
-        <h4>Analytics Consultant — 180 Degrees Consulting (180DC)</h4>
-        <p class="muted">Jun 2024 – Present</p>
-        <ul>
-          <li>Applied data analysis and visualization to support NGOs</li>
-        </ul>
+  <!-- Experience -->
+  <section class="section" style="background: var(--bg-tertiary);">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: left;">
+        <h2>💼 Research & Professional Experience</h2>
       </div>
-    </section>
 
-    <section>
-      <h2>Certifications & Skills</h2>
-      <ul>
-        <li>Financial Engineering (Columbia), Machine Learning (Stanford), DataCamp Data Scientist Track</li>
-      </ul>
-      <h3>Skills</h3>
-      <ul>
-        <li>Econometrics, Statistics, Causal Inference</li>
-        <li>Machine Learning, Data Analysis in Python, Excel</li>
-        <li>Reproducible research workflows, data cleaning, documentation</li>
-      </ul>
-    </section>
-  </main>
+      <div class="cv-timeline stagger">
+        <div class="cv-entry card reveal">
+          <div class="cv-entry-header">
+            <div>
+              <h3 class="cv-entry-title">Research Assistant</h3>
+              <p class="cv-entry-org">Centro de Investigación de la Universidad del Pacífico (CIUP)</p>
+            </div>
+            <div class="cv-entry-date">Jan 2025 – Present</div>
+          </div>
+          <div class="cv-entry-content">
+            <p>Working under the supervision of <strong>Prof. Joanna Kámiche</strong> on applied microeconomic research:</p>
+            <ul>
+              <li>Conducting empirical analysis using Stata and Python</li>
+              <li>Developing econometric models for policy evaluation</li>
+              <li>Literature reviews and data cleaning for research projects</li>
+            </ul>
+            <div class="card-tags">
+              <span class="tag">Econometrics</span>
+              <span class="tag">Stata</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+        </div>
 
-  <footer class="site-footer">
-    <div class="container">&copy; 2025 Gabriel Saco Alvarado</div>
+        <div class="cv-entry card reveal">
+          <div class="cv-entry-header">
+            <div>
+              <h3 class="cv-entry-title">Teaching Assistant</h3>
+              <p class="cv-entry-org">Universidad del Pacífico</p>
+            </div>
+            <div class="cv-entry-date">Jul 2025 – Present</div>
+          </div>
+          <div class="cv-entry-content">
+            <p>Supporting instruction for undergraduate courses:</p>
+            <ul>
+              <li><strong>Mathematics III:</strong> Multivariable calculus, optimization, linear algebra</li>
+              <li><strong>Economics I:</strong> Microeconomic principles and introductory game theory</li>
+            </ul>
+            <div class="card-tags">
+              <span class="tag">Teaching</span>
+              <span class="tag">Mathematics</span>
+              <span class="tag">Economics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-entry card reveal">
+          <div class="cv-entry-header">
+            <div>
+              <h3 class="cv-entry-title">Analytics Consultant</h3>
+              <p class="cv-entry-org">180 Degrees Consulting</p>
+            </div>
+            <div class="cv-entry-date">Jun 2024 – Present</div>
+          </div>
+          <div class="cv-entry-content">
+            <p>Providing pro-bono consulting services to NGOs and social enterprises:</p>
+            <ul>
+              <li>Data analysis and visualization for impact measurement</li>
+              <li>Strategic recommendations based on quantitative insights</li>
+              <li>Collaborating with cross-functional teams on real-world projects</li>
+            </ul>
+            <div class="card-tags">
+              <span class="tag">Consulting</span>
+              <span class="tag">Data Analysis</span>
+              <span class="tag">Impact</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: left;">
+        <h2>🛠️ Skills & Tools</h2>
+      </div>
+
+      <div class="grid grid-3 reveal stagger">
+        <div class="card">
+          <h4 class="card-title">Programming</h4>
+          <div class="skill-list">
+            <span class="skill-item">Python</span>
+            <span class="skill-item">R</span>
+            <span class="skill-item">Stata</span>
+            <span class="skill-item">MATLAB</span>
+            <span class="skill-item">Julia</span>
+            <span class="skill-item">SQL</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 class="card-title">Libraries & Frameworks</h4>
+          <div class="skill-list">
+            <span class="skill-item">NumPy</span>
+            <span class="skill-item">Pandas</span>
+            <span class="skill-item">Scikit-learn</span>
+            <span class="skill-item">Statsmodels</span>
+            <span class="skill-item">PyTorch</span>
+            <span class="skill-item">Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 class="card-title">Other Tools</h4>
+          <div class="skill-list">
+            <span class="skill-item">Git</span>
+            <span class="skill-item">LaTeX</span>
+            <span class="skill-item">Excel (Advanced)</span>
+            <span class="skill-item">Jupyter</span>
+            <span class="skill-item">VS Code</span>
+            <span class="skill-item">Quarto</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="section" style="background: var(--bg-tertiary);">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: left;">
+        <h2>🏆 Certifications</h2>
+      </div>
+
+      <div class="grid grid-2 reveal stagger">
+        <div class="card card-compact">
+          <div class="flex items-center gap-md">
+            <div class="card-icon">🏛️</div>
+            <div>
+              <h4>Financial Engineering and Risk Management</h4>
+              <p class="text-muted text-sm">Columbia University (Coursera) · 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-compact">
+          <div class="flex items-center gap-md">
+            <div class="card-icon">🤖</div>
+            <div>
+              <h4>Machine Learning Specialization</h4>
+              <p class="text-muted text-sm">Stanford University (Coursera) · 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-compact">
+          <div class="flex items-center gap-md">
+            <div class="card-icon">📊</div>
+            <div>
+              <h4>Data Scientist Career Track</h4>
+              <p class="text-muted text-sm">DataCamp · 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-compact">
+          <div class="flex items-center gap-md">
+            <div class="card-icon">🌍</div>
+            <div>
+              <h4>IELTS Academic C1 (Band 7.0)</h4>
+              <p class="text-muted text-sm">British Council · 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: left;">
+        <h2>🌐 Languages</h2>
+      </div>
+
+      <div class="grid grid-3 reveal">
+        <div class="card text-center">
+          <div class="card-icon">🇪🇸</div>
+          <h4>Spanish</h4>
+          <p class="text-muted">Native</p>
+        </div>
+        <div class="card text-center">
+          <div class="card-icon">🇬🇧</div>
+          <h4>English</h4>
+          <p class="text-muted">C1 Advanced</p>
+        </div>
+        <div class="card text-center">
+          <div class="card-icon">🇫🇷</div>
+          <h4>French</h4>
+          <p class="text-muted">A2 Elementary</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- References -->
+  <section class="section" style="background: var(--bg-tertiary);">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: left;">
+        <h2>📞 References</h2>
+        <p>Available upon request. Primary references:</p>
+      </div>
+
+      <div class="grid grid-2 reveal stagger">
+        <div class="card">
+          <h4>Prof. Joanna Kámiche</h4>
+          <p class="text-muted mb-sm">Research Supervisor, Universidad del Pacífico</p>
+          <p>
+            <a href="mailto:kamiche_jn@up.edu.pe" class="link-accent">kamiche_jn@up.edu.pe</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h4>Prof. Manuel Barrón</h4>
+          <p class="text-muted mb-sm">Professor of Economics, Universidad del Pacífico</p>
+          <p>
+            <a href="mailto:mf.barrona@up.edu.pe" class="link-accent">mf.barrona@up.edu.pe</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Gabriel Saco Alvarado</div>
+          <p>Undergraduate economist and aspiring researcher.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="GitHub">📦</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+            <a href="mailto:ga.sacoa@alum.up.edu.pe" aria-label="Email">📧</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Resources</div>
+          <ul class="footer-links">
+            <li><a href="coursework.html">Coursework</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Contact</div>
+          <ul class="footer-links">
+            <li>Lima, Peru</li>
+            <li><a href="mailto:ga.sacoa@alum.up.edu.pe">ga.sacoa@alum.up.edu.pe</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Gabriel Saco Alvarado.</p>
+      </div>
+    </div>
   </footer>
 
-  <script src="/assets/js/main.js"></script>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

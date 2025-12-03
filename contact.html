@@ -1,67 +1,258 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact — Gabriel Saco Alvarado</title>
-  <meta name="description" content="Contact information for Gabriel Saco Alvarado.">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <meta name="description" content="Get in touch with Gabriel Saco Alvarado for research collaborations, opportunities, or questions.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <a href="/" class="logo">Gabriel Saco Alvarado</a>
-      </div>
-      <nav class="main-nav" aria-label="Main navigation">
-        <button id="theme-toggle-top6" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">☾</button>
-        <a href="/">Home</a>
-        <a href="/research.html">Research</a>
-        <a href="/teaching.html">Teaching</a>
-        <a href="/cv.html">CV</a>
-        <a href="/projects.html">Projects &amp; Software</a>
-        <a href="/coursework.html">Coursework</a>
-        <a href="/contact.html" aria-current="page">Contact</a>
+  <div class="bg-animated"></div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="brand-icon">GS</span>
+        <span>Gabriel Saco</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navbar-menu">
+        <a href="index.html" class="navbar-link">Home</a>
+        <a href="research.html" class="navbar-link">Research</a>
+        <a href="projects.html" class="navbar-link">Projects</a>
+        <a href="coursework.html" class="navbar-link">Coursework</a>
+        <a href="cv.html" class="navbar-link">CV</a>
+        <a href="notes.html" class="navbar-link">Notes</a>
+        <a href="contact.html" class="navbar-link active">Contact</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
       </nav>
     </div>
   </header>
 
-  <main class="container main-content">
-    <h1>Contact</h1>
-    <p class="muted">You can reach me at the contacts below. For inquiries, collaborations, or updates, please email or use the form.</p>
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="reveal">Get in Touch</h1>
+      <p class="lead reveal">Interested in research collaborations, opportunities, or just want to say hello?</p>
+    </div>
+  </section>
 
-    <section class="two-col">
-      <div>
-        <h2>Contact details</h2>
-        <p><strong>Address:</strong> Calle Bolognesi 143, Miraflores, Lima</p>
-        <p><strong>Phone:</strong> <a href="tel:+51994677161">+51 994 677 161</a></p>
-        <p><strong>Email:</strong> <a href="mailto:ga.sacoa@alum.up.edu.pe">ga.sacoa@alum.up.edu.pe</a></p>
+  <!-- Contact Cards -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3 stagger">
+        <div class="card text-center reveal">
+          <div class="card-icon">📧</div>
+          <h3 class="card-title">Email</h3>
+          <p class="card-content">Best way to reach me for academic inquiries</p>
+          <a href="mailto:ga.sacoa@alum.up.edu.pe" class="btn btn-outline" style="margin-top: var(--spacing-md);">
+            ga.sacoa@alum.up.edu.pe
+          </a>
+        </div>
 
-        <h3>Find me</h3>
-        <ul>
-          <li><a href="#">GitHub (placeholder)</a></li>
-          <li><a href="#">LinkedIn (placeholder)</a></li>
-          <li><a href="#">Google Scholar (placeholder)</a></li>
-        </ul>
+        <div class="card text-center reveal">
+          <div class="card-icon">📍</div>
+          <h3 class="card-title">Location</h3>
+          <p class="card-content">Based in Lima, Peru</p>
+          <p class="text-muted text-sm" style="margin-top: var(--spacing-md);">
+            Calle Bolognesi 143<br>
+            Miraflores, Lima 15074<br>
+            Peru
+          </p>
+        </div>
+
+        <div class="card text-center reveal">
+          <div class="card-icon">📱</div>
+          <h3 class="card-title">Phone</h3>
+          <p class="card-content">Available for urgent matters</p>
+          <a href="tel:+51994677161" class="btn btn-outline" style="margin-top: var(--spacing-md);">
+            +51 994 677 161
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social & Professional Links -->
+  <section class="section" style="background: var(--bg-tertiary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>🌐 Find Me Online</h2>
+        <p>Connect on professional platforms and see my work</p>
       </div>
 
-      <div>
-        <h2>Contact form (HTML only)</h2>
-        <p class="muted">This is a static form — to make it work, connect to a backend or form service (Formspree, Netlify Forms, etc.).</p>
-        <form class="contact-form" action="#" method="post">
-          <label>Name<br><input name="name" type="text" placeholder="Your name"></label>
-          <label>Email<br><input name="email" type="email" placeholder="you@example.com"></label>
-          <label>Message<br><textarea name="message" rows="6" placeholder="Short message"></textarea></label>
-          <button type="submit" class="btn">Send (placeholder)</button>
+      <div class="grid grid-4 stagger">
+        <a href="#" class="social-card card reveal" target="_blank" rel="noopener">
+          <div class="social-icon">📦</div>
+          <h4>GitHub</h4>
+          <p class="text-muted text-sm">Code & Projects</p>
+        </a>
+
+        <a href="#" class="social-card card reveal" target="_blank" rel="noopener">
+          <div class="social-icon">💼</div>
+          <h4>LinkedIn</h4>
+          <p class="text-muted text-sm">Professional Network</p>
+        </a>
+
+        <a href="#" class="social-card card reveal" target="_blank" rel="noopener">
+          <div class="social-icon">📚</div>
+          <h4>Google Scholar</h4>
+          <p class="text-muted text-sm">Publications</p>
+        </a>
+
+        <a href="#" class="social-card card reveal" target="_blank" rel="noopener">
+          <div class="social-icon">🐦</div>
+          <h4>Twitter/X</h4>
+          <p class="text-muted text-sm">Thoughts & Updates</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <h2>Send a Message</h2>
+          <p class="lead">
+            Whether you have a question about my research, want to discuss a collaboration, 
+            or just want to connect — I'd love to hear from you.
+          </p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">🎓</span>
+              <div>
+                <strong>Academic Inquiries</strong>
+                <p class="text-muted text-sm">Research collaborations, RA positions, graduate school</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">💻</span>
+              <div>
+                <strong>Technical Questions</strong>
+                <p class="text-muted text-sm">Projects, code, methodology discussions</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🤝</span>
+              <div>
+                <strong>Networking</strong>
+                <p class="text-muted text-sm">Coffee chats, career advice, mentorship</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form card reveal" id="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Name *</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email *</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject *</label>
+            <select id="subject" name="subject" class="form-input" required>
+              <option value="">Select a subject...</option>
+              <option value="research">Research Collaboration</option>
+              <option value="opportunity">Job/RA Opportunity</option>
+              <option value="technical">Technical Question</option>
+              <option value="networking">Networking</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message *</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Your message..." rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+            Send Message ✉️
+          </button>
+
+          <p class="text-muted text-sm text-center" style="margin-top: var(--spacing-md);">
+            I typically respond within 24-48 hours.
+          </p>
         </form>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="site-footer">
-    <div class="container">&copy; 2025 Gabriel Saco Alvarado</div>
+  <!-- Map / Location Visual -->
+  <section class="section" style="background: var(--bg-tertiary); padding: var(--spacing-xl) 0;">
+    <div class="container text-center">
+      <div class="reveal">
+        <h3 class="mb-md">🌎 Based in Lima, Peru</h3>
+        <p class="text-muted">
+          Open to remote collaborations worldwide and in-person meetings in Lima.
+        </p>
+        <div class="timezone-info" style="margin-top: var(--spacing-lg);">
+          <span class="badge">🕐 Timezone: UTC-5 (PET)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Gabriel Saco Alvarado</div>
+          <p>Undergraduate economist and aspiring researcher.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="GitHub">📦</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+            <a href="mailto:ga.sacoa@alum.up.edu.pe" aria-label="Email">📧</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Resources</div>
+          <ul class="footer-links">
+            <li><a href="coursework.html">Coursework</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Contact</div>
+          <ul class="footer-links">
+            <li>Lima, Peru</li>
+            <li><a href="mailto:ga.sacoa@alum.up.edu.pe">ga.sacoa@alum.up.edu.pe</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Gabriel Saco Alvarado.</p>
+      </div>
+    </div>
   </footer>
 
-  <script src="/assets/js/main.js"></script>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
