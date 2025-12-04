@@ -4,14 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research — Gabriel Saco Alvarado</title>
-  <meta name="description" content="Research interests and working papers in econometrics, statistics, and causal AI.">
+  <meta name="description" content="Research interests, working papers, and RA projects in econometrics, causal inference, and statistical learning.">
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -24,18 +21,15 @@
         <span class="brand-icon">GS</span>
         <span>Gabriel Saco</span>
       </a>
-
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-
       <nav class="navbar-menu">
         <a href="index.html" class="navbar-link">Home</a>
         <a href="research.html" class="navbar-link active">Research</a>
-        <a href="projects.html" class="navbar-link">Projects</a>
+        <a href="software.html" class="navbar-link">Software</a>
         <a href="coursework.html" class="navbar-link">Coursework</a>
         <a href="cv.html" class="navbar-link">CV</a>
-        <a href="notes.html" class="navbar-link">Notes</a>
         <a href="contact.html" class="navbar-link">Contact</a>
         <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
       </nav>
@@ -46,7 +40,95 @@
   <section class="page-header">
     <div class="container">
       <h1 class="reveal">Research</h1>
-      <p class="lead reveal">My research focuses on developing and applying rigorous econometric methods to understand causal relationships in economic and social phenomena.</p>
+      <p class="lead reveal">My research focuses on developing and applying rigorous econometric methods for causal inference, with emphasis on finite-sample properties and computational aspects.</p>
+    </div>
+  </section>
+
+  <!-- Working Paper -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: left;">
+        <h2>Working Paper</h2>
+        <div class="academic-line"></div>
+      </div>
+
+      <div class="featured-paper reveal">
+        <div class="featured-paper-header">
+          <span class="featured-paper-badge">📄 Working Paper</span>
+        </div>
+        <div class="featured-paper-content">
+          <h2 class="featured-paper-title">Finite-Sample Failures and Condition-Number Diagnostics in Double Machine Learning</h2>
+          <p class="featured-paper-author">Gabriel Saco Alvarado</p>
+          <p class="featured-paper-abstract">
+            This paper investigates the finite-sample behavior of Double Machine Learning (DML) estimators, 
+            identifying conditions under which standard asymptotic approximations fail. I propose novel 
+            condition-number diagnostics to detect and address numerical instabilities in high-dimensional 
+            causal inference settings. The analysis shows that ill-conditioning in the first-stage estimation 
+            can lead to severely distorted inference even with large samples, and provides practical guidance 
+            for practitioners.
+          </p>
+          <div class="featured-paper-tags">
+            <span class="tag">Double Machine Learning</span>
+            <span class="tag">Finite-Sample Theory</span>
+            <span class="tag">Condition Numbers</span>
+            <span class="tag">Causal Inference</span>
+            <span class="tag">High-Dimensional Statistics</span>
+          </div>
+          <div class="featured-paper-buttons">
+            <a href="assets/doc/condtion-dml.pdf" class="btn btn-primary" target="_blank">
+              📑 Read Paper
+            </a>
+            <a href="assets/doc/derivations.pdf" class="btn btn-secondary" target="_blank">
+              📐 Derivations
+            </a>
+            <a href="software.html" class="btn btn-outline">
+              💻 Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Assistantship -->
+  <section class="section" style="background: var(--bg-tertiary);">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: left;">
+        <h2>Research Assistantship</h2>
+        <div class="academic-line"></div>
+      </div>
+
+      <div class="ra-card reveal">
+        <div class="ra-header">
+          <div>
+            <h3 class="ra-title">Research Assistant</h3>
+            <p class="ra-org">Centro de Investigación, Universidad del Pacífico (CIUP)</p>
+          </div>
+          <span class="ra-date">Jan 2025 – Present</span>
+        </div>
+        <div class="ra-content">
+          <p class="ra-supervisor">
+            Supervisor: <strong>Prof. Joanna Kámiche</strong>
+          </p>
+          <p class="ra-desc">
+            I work on applied microeconomic research projects with focus on policy evaluation 
+            and development economics. My responsibilities include:
+          </p>
+          <ul class="ra-tasks">
+            <li>Developing econometric specifications for causal identification</li>
+            <li>Implementing estimation procedures in Stata and Python</li>
+            <li>Conducting robustness checks and sensitivity analysis</li>
+            <li>Preparing data visualizations and summary statistics</li>
+            <li>Literature reviews on methodological advances</li>
+          </ul>
+          <div class="ra-tags">
+            <span class="tag">Applied Microeconomics</span>
+            <span class="tag">Policy Evaluation</span>
+            <span class="tag">Stata</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -56,192 +138,80 @@
       <div class="section-header reveal">
         <h2>Research Interests</h2>
         <p>Core areas where I aim to contribute original research</p>
+        <div class="academic-line center"></div>
       </div>
 
       <div class="grid grid-3 stagger">
-        <div class="card interest-card reveal">
-          <div class="card-icon">📊</div>
-          <h3 class="card-title">Econometrics</h3>
+        <div class="card reveal">
+          <h3 class="card-title" style="color: var(--accent-primary);">Econometrics</h3>
           <p class="card-content">
-            <strong>Key topics:</strong> Causal inference, double/debiased machine learning, robust estimation, 
-            instrumental variables, regression discontinuity, difference-in-differences, 
-            and high-dimensional regression techniques.
+            My primary interest lies in causal inference methodology. I work on:
           </p>
+          <ul class="interest-list">
+            <li><strong>Double/Debiased ML:</strong> Finite-sample properties, regularization, cross-fitting</li>
+            <li><strong>Instrumental Variables:</strong> Weak identification, many instruments, JIVE</li>
+            <li><strong>Panel Methods:</strong> Diff-in-diff with staggered adoption, synthetic control</li>
+            <li><strong>Regression Discontinuity:</strong> Bandwidth selection, local polynomial estimation</li>
+          </ul>
         </div>
 
-        <div class="card interest-card reveal">
-          <div class="card-icon">📈</div>
-          <h3 class="card-title">Statistics</h3>
+        <div class="card reveal">
+          <h3 class="card-title" style="color: var(--accent-primary);">Statistical Theory</h3>
           <p class="card-content">
-            <strong>Key topics:</strong> Asymptotic theory, high-dimensional inference, semiparametric estimation, 
-            bootstrap methods, multiple testing corrections, and Bayesian approaches.
+            I am interested in the theoretical foundations of modern inference:
           </p>
+          <ul class="interest-list">
+            <li><strong>Semiparametric Efficiency:</strong> Influence functions, efficient estimation</li>
+            <li><strong>High-Dimensional Inference:</strong> Post-selection inference, debiased LASSO</li>
+            <li><strong>Asymptotic Theory:</strong> Uniform convergence, empirical processes</li>
+            <li><strong>Bootstrap Methods:</strong> Wild bootstrap, cluster-robust inference</li>
+          </ul>
         </div>
 
-        <div class="card interest-card reveal">
-          <div class="card-icon">🤖</div>
-          <h3 class="card-title">Causal AI</h3>
+        <div class="card reveal">
+          <h3 class="card-title" style="color: var(--accent-primary);">Causal Machine Learning</h3>
           <p class="card-content">
-            <strong>Key topics:</strong> Causal machine learning, heterogeneous treatment effects, 
-            policy learning, causal forests, neural causal models, and algorithmic fairness.
+            I work on methods combining ML with causal inference:
           </p>
+          <ul class="interest-list">
+            <li><strong>Heterogeneous Effects:</strong> CATE estimation, causal forests, meta-learners</li>
+            <li><strong>Policy Learning:</strong> Optimal treatment rules, regret bounds</li>
+            <li><strong>Causal Discovery:</strong> Structure learning, interventional data</li>
+            <li><strong>Representation Learning:</strong> Causal embeddings, disentanglement</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Working Papers Section -->
+  <!-- Research Agenda -->
   <section class="section" style="background: var(--bg-tertiary);">
-    <div class="container" data-filter-container>
+    <div class="container">
       <div class="section-header reveal">
-        <h2>Working Papers & Projects</h2>
-        <p>Current research projects and works in progress</p>
+        <h2>Research Agenda</h2>
+        <p>Directions I aim to pursue in graduate studies</p>
+        <div class="academic-line center"></div>
       </div>
 
-      <!-- Filter Tags -->
-      <div class="tags-container reveal">
-        <button class="tag tag-filter active" data-filter-tag="all">All</button>
-        <button class="tag tag-filter" data-filter-tag="econometrics">Econometrics</button>
-        <button class="tag tag-filter" data-filter-tag="causal inference">Causal Inference</button>
-        <button class="tag tag-filter" data-filter-tag="machine learning">Machine Learning</button>
-        <button class="tag tag-filter" data-filter-tag="policy">Policy</button>
-      </div>
-
-      <!-- Project Cards -->
       <div class="grid grid-2 stagger">
-        <div class="card project-card reveal" data-filter-item="econometrics, causal inference, machine learning">
-          <div class="card-header">
-            <span class="tag">Working Paper</span>
-          </div>
-          <h3 class="card-title">Robust Double Machine Learning for High-Dimensional Treatment Effects</h3>
-          <p class="card-content">
-            Developing robust estimators for average treatment effects in settings with high-dimensional confounders 
-            using cross-fitting and sample splitting techniques. Applications to labor market policy evaluation.
-          </p>
-          <div class="card-tags">
-            <span class="tag">Econometrics</span>
-            <span class="tag">Causal Inference</span>
-            <span class="tag">Machine Learning</span>
-          </div>
-          <div class="card-footer">
-            <span class="text-muted text-sm">In Progress</span>
-            <div class="card-links">
-              <a href="#" class="btn btn-sm btn-secondary">PDF (Coming)</a>
-              <a href="#" class="btn btn-sm btn-outline">GitHub</a>
-            </div>
-          </div>
+        <div class="card reveal">
+          <h4 class="card-title">Methodological</h4>
+          <ul class="agenda-list">
+            <li>Finite-sample corrections for DML in ill-conditioned settings</li>
+            <li>Valid inference after cross-validation-based model selection</li>
+            <li>Bootstrap methods for high-dimensional causal estimators</li>
+            <li>Sensitivity analysis for unobserved confounding with ML</li>
+          </ul>
         </div>
 
-        <div class="card project-card reveal" data-filter-item="causal inference, policy, econometrics">
-          <div class="card-header">
-            <span class="tag">Research Project</span>
-          </div>
-          <h3 class="card-title">Heterogeneous Effects of Microfinance on Small Business Growth</h3>
-          <p class="card-content">
-            Using causal forests and CATE estimation to understand which small businesses benefit most from 
-            microfinance interventions in Peru. Focuses on treatment effect heterogeneity across firm characteristics.
-          </p>
-          <div class="card-tags">
-            <span class="tag">Causal Inference</span>
-            <span class="tag">Policy</span>
-            <span class="tag">Econometrics</span>
-          </div>
-          <div class="card-footer">
-            <span class="text-muted text-sm">In Progress</span>
-            <div class="card-links">
-              <a href="#" class="btn btn-sm btn-secondary">PDF (Coming)</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card project-card reveal" data-filter-item="machine learning, econometrics">
-          <div class="card-header">
-            <span class="tag">Methodology</span>
-          </div>
-          <h3 class="card-title">Inference for High-Dimensional Regression with Cross-Validation</h3>
-          <p class="card-content">
-            Investigating valid inference procedures when model selection and estimation are performed via 
-            cross-validation. Theoretical properties and simulation evidence for LASSO-based methods.
-          </p>
-          <div class="card-tags">
-            <span class="tag">Machine Learning</span>
-            <span class="tag">Econometrics</span>
-          </div>
-          <div class="card-footer">
-            <span class="text-muted text-sm">Planned</span>
-            <div class="card-links">
-              <a href="#" class="btn btn-sm btn-outline">Notes</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card project-card reveal" data-filter-item="policy, causal inference">
-          <div class="card-header">
-            <span class="tag">Applied</span>
-          </div>
-          <h3 class="card-title">Evaluating Education Policy Interventions: A Synthetic Control Approach</h3>
-          <p class="card-content">
-            Applying synthetic control methods to evaluate the causal effect of education policy changes in 
-            Latin America. Includes sensitivity analysis and placebo tests for inference.
-          </p>
-          <div class="card-tags">
-            <span class="tag">Policy</span>
-            <span class="tag">Causal Inference</span>
-          </div>
-          <div class="card-footer">
-            <span class="text-muted text-sm">Planned</span>
-            <div class="card-links">
-              <a href="#" class="btn btn-sm btn-outline">Proposal</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Publications Section -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2>Publications & Preprints</h2>
-        <p>Peer-reviewed publications and preprints</p>
-      </div>
-
-      <div class="card reveal" style="text-align: center; padding: var(--space-3xl);">
-        <p class="text-muted" style="font-size: var(--fs-lg);">
-          📝 Publications coming soon...
-        </p>
-        <p class="text-muted">
-          I am currently working on several research projects. Check back later for updates, 
-          or <a href="contact.html">contact me</a> for more information about ongoing work.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Research Experience -->
-  <section class="section" style="background: var(--bg-tertiary);">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2>Research Experience</h2>
-        <p>My experience in academic research</p>
-      </div>
-
-      <div class="timeline reveal">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Jan 2025 – Present</div>
-          <div class="timeline-title">Research Assistant</div>
-          <div class="timeline-subtitle">CIUP – Universidad del Pacífico</div>
-          <div class="timeline-content">
-            <p>Working with Prof. Joanna Kámiche on applied econometric research:</p>
-            <ul>
-              <li>Implement econometric models for policy evaluation research</li>
-              <li>Clean, transform, and prepare large datasets for empirical analysis</li>
-              <li>Develop reproducible research workflows using Python and R</li>
-              <li>Contribute to documentation and code review processes</li>
-            </ul>
-          </div>
+        <div class="card reveal">
+          <h4 class="card-title">Applied</h4>
+          <ul class="agenda-list">
+            <li>Heterogeneous effects of education policy interventions</li>
+            <li>Optimal targeting of social programs using CATE</li>
+            <li>Causal effects of credit access on firm outcomes</li>
+            <li>Labor market effects of minimum wage with spillovers</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -250,49 +220,42 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
+      <div class="footer-compact">
+        <div class="footer-info">
           <div class="footer-brand-name">Gabriel Saco Alvarado</div>
-          <p>Undergraduate economist and aspiring researcher in Econometrics, Statistics, and Causal AI.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="GitHub">📦</a>
-            <a href="#" aria-label="LinkedIn">💼</a>
-            <a href="#" aria-label="Google Scholar">📚</a>
-            <a href="mailto:ga.sacoa@alum.up.edu.pe" aria-label="Email">📧</a>
-          </div>
+          <p class="footer-tagline">Econometrics · Causal Inference · Machine Learning</p>
         </div>
-        <div>
-          <div class="footer-heading">Navigation</div>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="cv.html">CV</a></li>
-          </ul>
+
+        <div class="footer-links-row">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="software.html">Software</a>
+          <a href="coursework.html">Coursework</a>
+          <a href="cv.html">CV</a>
+          <a href="contact.html">Contact</a>
         </div>
-        <div>
-          <div class="footer-heading">Resources</div>
-          <ul class="footer-links">
-            <li><a href="coursework.html">Coursework</a></li>
-            <li><a href="notes.html">Notes</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="footer-heading">Contact</div>
-          <ul class="footer-links">
-            <li>Lima, Peru</li>
-            <li><a href="mailto:ga.sacoa@alum.up.edu.pe">ga.sacoa@alum.up.edu.pe</a></li>
-          </ul>
+
+        <div class="footer-social">
+          <a href="https://github.com/gsaco" target="_blank" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/gabriel-saco-884b1630b/" target="_blank" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:ga.sacoa@alum.up.edu.pe" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
+          </a>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p>&copy; 2025 Gabriel Saco Alvarado. All rights reserved.</p>
+        <p>&copy; 2025 Gabriel Saco Alvarado</p>
       </div>
     </div>
   </footer>
 
   <button class="back-to-top" aria-label="Back to top">↑</button>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>

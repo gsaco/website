@@ -3,27 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gabriel Saco Alvarado — Economist & Researcher</title>
+  <title>Gabriel Saco Alvarado — Econometrics, Statistics & Causal Inference</title>
   <meta name="description" content="Gabriel Saco Alvarado — Undergraduate economist and aspiring researcher specializing in Econometrics, Causal Inference, and Machine Learning. Universidad del Pacífico & University of London (LSE).">
   <meta name="author" content="Gabriel Saco Alvarado">
-  <meta name="keywords" content="econometrics, causal inference, machine learning, statistics, economics, research, Gabriel Saco">
+  <meta name="keywords" content="econometrics, causal inference, machine learning, statistics, economics, research, Gabriel Saco, double machine learning, semiparametric">
 
   <!-- Open Graph / Social -->
-  <meta property="og:title" content="Gabriel Saco Alvarado — Economist & Researcher">
+  <meta property="og:title" content="Gabriel Saco Alvarado — Econometrics & Causal Inference">
   <meta property="og:description" content="Undergraduate economist specializing in Econometrics, Causal Inference, and Machine Learning.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://gsaco.github.io/website/">
   <meta property="og:image" content="assets/img/pho.jpg">
 
-  <!-- Fonts: Crimson Text for Academic Serif + Inter for Sans -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- JSON-LD Structured Data -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -32,11 +30,11 @@
     "email": "mailto:ga.sacoa@alum.up.edu.pe",
     "jobTitle": "Undergraduate Researcher in Economics",
     "description": "Aspiring researcher in Econometrics, Statistics, and Causal Inference",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Lima",
-      "addressCountry": "Peru"
-    },
+    "url": "https://gsaco.github.io/website/",
+    "sameAs": [
+      "https://github.com/gsaco",
+      "https://www.linkedin.com/in/gabriel-saco-884b1630b/"
+    ],
     "alumniOf": [
       { "@type": "CollegeOrUniversity", "name": "Universidad del Pacífico" },
       { "@type": "CollegeOrUniversity", "name": "University of London - London School of Economics" }
@@ -45,7 +43,6 @@
   </script>
 </head>
 <body>
-  <!-- Subtle Academic Grid Background -->
   <div class="bg-animated"></div>
 
   <!-- Navigation -->
@@ -65,10 +62,9 @@
       <nav class="navbar-menu">
         <a href="index.html" class="navbar-link active">Home</a>
         <a href="research.html" class="navbar-link">Research</a>
-        <a href="projects.html" class="navbar-link">Projects</a>
+        <a href="software.html" class="navbar-link">Software</a>
         <a href="coursework.html" class="navbar-link">Coursework</a>
         <a href="cv.html" class="navbar-link">CV</a>
-        <a href="notes.html" class="navbar-link">Notes</a>
         <a href="contact.html" class="navbar-link">Contact</a>
         <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">🌙</button>
       </nav>
@@ -88,10 +84,6 @@
           Gabriel Saco<br>
           <span class="name">Alvarado</span>
         </h1>
-        
-        <p class="hero-subtitle">
-          Undergraduate Economist & Aspiring Researcher
-        </p>
 
         <div class="hero-fields">
           <span class="hero-field">Econometrics</span>
@@ -100,356 +92,117 @@
           <span class="hero-field">Statistics</span>
         </div>
         
-        <p class="hero-description">
-          I study the intersection of <strong>statistical theory</strong> and <strong>causal reasoning</strong>. 
-          Currently pursuing dual degrees at Universidad del Pacífico (top 10%) and the University of London 
-          with LSE direction (First Class Honours), my research focuses on econometric methods, 
-          high-dimensional inference, and machine learning applications in economics and policy evaluation.
-        </p>
-        
+        <div class="hero-bio">
+          <p>
+            I am an undergraduate pursuing dual degrees at <strong>Universidad del Pacífico</strong> (top 1% of my program) 
+            and the <strong>London School of Economics</strong> (First Class Honours) in Economics with a focus on 
+            Mathematics (Real Analysis, Convex Analysis, Stochastic Processes, Numerical Methods, Optimization).
+          </p>
+          <p>
+            I work as a Research Assistant on projects in Econometrics and Computational Statistics, 
+            and serve as a Teaching Assistant for Advanced Mathematics.
+          </p>
+        </div>
+
+        <!-- Research Experience Areas -->
+        <div class="expertise-section">
+          <h4 class="expertise-heading">Research Experience</h4>
+          <div class="expertise-grid">
+            <div class="expertise-column">
+              <div class="expertise-item">Semiparametric & Efficiency Theory</div>
+              <div class="expertise-item">Nonparametric Statistics</div>
+              <div class="expertise-item">High-Dimensional Statistics</div>
+            </div>
+            <div class="expertise-column">
+              <div class="expertise-item">Statistical Learning Theory</div>
+              <div class="expertise-item">Computational Statistics</div>
+              <div class="expertise-item">Experimental Design</div>
+            </div>
+            <div class="expertise-column">
+              <div class="expertise-item">Time Series & Stochastic Processes</div>
+              <div class="expertise-item">Numerical Methods</div>
+              <div class="expertise-item">Econometrics</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Currently Learning -->
+        <div class="learning-section">
+          <h4 class="learning-heading">Currently Learning</h4>
+          <div class="learning-items">
+            <span class="learning-item">Causal Discovery</span>
+            <span class="learning-item">Counterfactual Reasoning</span>
+            <span class="learning-item">Causal Representation Learning</span>
+          </div>
+        </div>
+
         <div class="hero-buttons">
-          <a href="research.html" class="btn btn-primary">Research Interests</a>
-          <a href="cv.html" class="btn btn-secondary">View CV</a>
-          <a href="contact.html" class="btn btn-outline">Contact</a>
+          <a href="research.html" class="btn btn-primary">Research</a>
+          <a href="cv.html" class="btn btn-secondary">CV</a>
+          <a href="https://github.com/gsaco" class="btn btn-outline" target="_blank">GitHub</a>
         </div>
 
-        <div class="hero-credentials">
-          <div class="credential-item">
-            <div class="credential-value">Top 10%</div>
-            <div class="credential-label">Economics Program</div>
-          </div>
-          <div class="credential-item">
-            <div class="credential-value">1st Class</div>
-            <div class="credential-label">Honours (LSE)</div>
-          </div>
-          <div class="credential-item">
-            <div class="credential-value">4+</div>
-            <div class="credential-label">Certifications</div>
-          </div>
-        </div>
-
-        <div class="hero-badges">
-          <span class="hero-badge"><span class="icon">📍</span> Lima, Peru</span>
-          <span class="hero-badge"><span class="icon">📧</span> ga.sacoa@alum.up.edu.pe</span>
+        <div class="hero-contact-bar">
+          <a href="mailto:ga.sacoa@alum.up.edu.pe" class="hero-contact-item">
+            <span class="icon">📧</span>
+            <span>ga.sacoa@alum.up.edu.pe</span>
+          </a>
+          <span class="hero-contact-item">
+            <span class="icon">📍</span>
+            <span>Lima, Peru</span>
+          </span>
         </div>
       </div>
 
       <div class="hero-image reveal-right">
         <div class="hero-photo-wrapper">
-          <img src="assets/img/pho.jpg" alt="Gabriel Saco Alvarado — Professional Photo" class="hero-photo">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Quick Info Panel -->
-  <section class="section">
-    <div class="container">
-      <div class="grid grid-4 stagger">
-        <div class="info-panel reveal">
-          <div class="info-panel-title">Education</div>
-          <p class="text-sm mb-sm"><strong>BSc Economics</strong></p>
-          <p class="text-xs text-muted mb-md">Universidad del Pacífico · 2021–2026</p>
-          <p class="text-sm mb-sm"><strong>BSc Economics & Finance</strong></p>
-          <p class="text-xs text-muted">UoL (LSE) · 2024–2026</p>
-        </div>
-
-        <div class="info-panel reveal">
-          <div class="info-panel-title">Current Position</div>
-          <p class="text-sm mb-sm"><strong>Research Assistant</strong></p>
-          <p class="text-xs text-muted mb-md">CIUP · Prof. Joanna Kámiche</p>
-          <p class="text-sm mb-sm"><strong>Teaching Assistant</strong></p>
-          <p class="text-xs text-muted">Math III · Economics I</p>
-        </div>
-
-        <div class="info-panel reveal">
-          <div class="info-panel-title">Technical Skills</div>
-          <div class="skill-list">
-            <span class="skill-item">Python</span>
-            <span class="skill-item">R</span>
-            <span class="skill-item">Stata</span>
-            <span class="skill-item">Julia</span>
-            <span class="skill-item">SQL</span>
-            <span class="skill-item">LaTeX</span>
-          </div>
-        </div>
-
-        <div class="info-panel reveal">
-          <div class="info-panel-title">Libraries & Tools</div>
-          <div class="skill-list">
-            <span class="skill-item">NumPy</span>
-            <span class="skill-item">Pandas</span>
-            <span class="skill-item">Scikit-learn</span>
-            <span class="skill-item">PyTorch</span>
-            <span class="skill-item">Statsmodels</span>
+          <img src="assets/img/pho.jpg" alt="Gabriel Saco Alvarado" class="hero-photo">
+          <div class="hero-credentials-overlay">
+            <div class="credential-badge">
+              <span class="credential-value">Top 1%</span>
+              <span class="credential-label">UP Economics</span>
+            </div>
+            <div class="credential-badge">
+              <span class="credential-value">1st Class</span>
+              <span class="credential-label">LSE Honours</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Research Interests -->
-  <section class="section" style="background: var(--bg-tertiary);">
+  <!-- Featured Working Paper -->
+  <section class="section featured-paper-section">
     <div class="container">
-      <div class="section-header reveal">
-        <h2>Research Interests</h2>
-        <p>Exploring rigorous methods at the intersection of statistics, machine learning, and causal reasoning</p>
-        <div class="academic-line center"></div>
-      </div>
-
-      <div class="grid grid-3 stagger">
-        <div class="card interest-card reveal">
-          <div class="card-icon">📊</div>
-          <h3 class="card-title">Econometrics</h3>
-          <p class="card-content">
-            Causal inference methods including instrumental variables, regression discontinuity, 
-            difference-in-differences, and synthetic control methods. Focus on robust estimation 
-            under model misspecification and weak identification.
+      <div class="featured-paper reveal">
+        <div class="featured-paper-header">
+          <span class="featured-paper-badge">📄 Working Paper</span>
+        </div>
+        <div class="featured-paper-content">
+          <h2 class="featured-paper-title">Finite-Sample Failures and Condition-Number Diagnostics in Double Machine Learning</h2>
+          <p class="featured-paper-author">Gabriel Saco Alvarado</p>
+          <p class="featured-paper-abstract">
+            This paper investigates the finite-sample behavior of Double Machine Learning (DML) estimators, 
+            identifying conditions under which standard asymptotic approximations fail. I propose novel 
+            condition-number diagnostics to detect and address numerical instabilities in high-dimensional 
+            causal inference settings.
           </p>
-          <div class="card-tags">
-            <span class="tag">IV</span>
-            <span class="tag">RDD</span>
-            <span class="tag">DiD</span>
-            <span class="tag">GMM</span>
+          <div class="featured-paper-tags">
+            <span class="tag">Double Machine Learning</span>
+            <span class="tag">Finite-Sample Theory</span>
+            <span class="tag">Condition Numbers</span>
+            <span class="tag">Causal Inference</span>
+          </div>
+          <div class="featured-paper-buttons">
+            <a href="assets/doc/condtion-dml.pdf" class="btn btn-primary" target="_blank">
+              📑 Read Paper
+            </a>
+            <a href="assets/doc/derivations.pdf" class="btn btn-secondary" target="_blank">
+              📐 Derivations
+            </a>
           </div>
         </div>
-
-        <div class="card interest-card reveal">
-          <div class="card-icon">📈</div>
-          <h3 class="card-title">Statistical Theory</h3>
-          <p class="card-content">
-            Asymptotic theory, high-dimensional inference, semiparametric and nonparametric methods. 
-            Interested in finite-sample properties, bootstrap inference, and regularization techniques 
-            for modern econometric applications.
-          </p>
-          <div class="card-tags">
-            <span class="tag">Asymptotics</span>
-            <span class="tag">Bootstrap</span>
-            <span class="tag">Semiparametrics</span>
-          </div>
-        </div>
-
-        <div class="card interest-card reveal">
-          <div class="card-icon">🤖</div>
-          <h3 class="card-title">Causal Machine Learning</h3>
-          <p class="card-content">
-            Double/debiased machine learning, treatment effect heterogeneity (CATE), 
-            causal forests, and neural network methods for causal inference. 
-            Applications to policy evaluation and personalized decision-making.
-          </p>
-          <div class="card-tags">
-            <span class="tag">DML</span>
-            <span class="tag">CATE</span>
-            <span class="tag">Causal Forests</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center mt-xl reveal">
-        <a href="research.html" class="btn btn-primary">Explore Research →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education & Experience Timeline -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2>Academic Background</h2>
-        <p>Education, research experience, and professional development</p>
-        <div class="academic-line center"></div>
-      </div>
-
-      <div class="grid grid-2">
-        <!-- Education -->
-        <div class="reveal-left">
-          <h3 class="mb-xl" style="color: var(--accent-primary);">🎓 Education</h3>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-date">Jul 2021 – Dec 2026</div>
-              <div class="timeline-title">BSc in Economics</div>
-              <div class="timeline-subtitle">Universidad del Pacífico, Lima, Peru</div>
-              <div class="timeline-content">
-                <ul>
-                  <li><strong>Top 10%</strong> of the Economics program</li>
-                  <li>Minor in Mathematics: Stochastic Processes, Real Analysis, Convex Analysis, Numerical Methods</li>
-                  <li>Focus on econometrics and quantitative methods</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-date">Jan 2024 – Dec 2026</div>
-              <div class="timeline-title">BSc in Economics and Finance</div>
-              <div class="timeline-subtitle">University of London (LSE Direction)</div>
-              <div class="timeline-content">
-                <ul>
-                  <li>Dual degree with academic direction from <strong>London School of Economics</strong></li>
-                  <li>Achieved <strong>First Class Honours</strong> (highest distinction)</li>
-                  <li>Selected from 900+ students for the dual-degree program</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Experience -->
-        <div class="reveal-right">
-          <h3 class="mb-xl" style="color: var(--accent-primary);">💼 Experience</h3>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-date">Jan 2025 – Present</div>
-              <div class="timeline-title">Research Assistant</div>
-              <div class="timeline-subtitle">CIUP – Universidad del Pacífico</div>
-              <div class="timeline-content">
-                <ul>
-                  <li>Working under <strong>Prof. Joanna Kámiche</strong> on applied microeconomic research</li>
-                  <li>Econometric modeling, data cleaning, and empirical analysis</li>
-                  <li>Tools: Stata, Python, R</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-date">Jul 2025 – Present</div>
-              <div class="timeline-title">Teaching Assistant</div>
-              <div class="timeline-subtitle">Universidad del Pacífico</div>
-              <div class="timeline-content">
-                <ul>
-                  <li><strong>Mathematics III:</strong> Multivariable calculus, optimization</li>
-                  <li><strong>Economics I:</strong> Microeconomic principles, game theory</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-date">Jun 2024 – Present</div>
-              <div class="timeline-title">Analytics Consultant</div>
-              <div class="timeline-subtitle">180 Degrees Consulting</div>
-              <div class="timeline-content">
-                <ul>
-                  <li>Pro-bono consulting for NGOs and social enterprises</li>
-                  <li>Data analysis, visualization, and impact measurement</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Technical Proficiency -->
-  <section class="section" style="background: var(--bg-tertiary);">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2>Technical Proficiency</h2>
-        <p>Programming languages, tools, and frameworks for quantitative research</p>
-        <div class="academic-line center"></div>
-      </div>
-
-      <div class="grid grid-3 stagger">
-        <div class="card reveal">
-          <h4 class="card-title">Programming Languages</h4>
-          <p class="card-content text-sm mb-lg">Primary tools for statistical computing and data analysis</p>
-          <div class="tech-stack">
-            <div class="tech-item">
-              <span class="tech-icon">🐍</span>
-              <span class="tech-name">Python</span>
-            </div>
-            <div class="tech-item">
-              <span class="tech-icon">📊</span>
-              <span class="tech-name">R</span>
-            </div>
-            <div class="tech-item">
-              <span class="tech-icon">📈</span>
-              <span class="tech-name">Stata</span>
-            </div>
-            <div class="tech-item">
-              <span class="tech-icon">🔢</span>
-              <span class="tech-name">MATLAB</span>
-            </div>
-            <div class="tech-item">
-              <span class="tech-icon">⚡</span>
-              <span class="tech-name">Julia</span>
-            </div>
-            <div class="tech-item">
-              <span class="tech-icon">🗄️</span>
-              <span class="tech-name">SQL</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="card reveal">
-          <h4 class="card-title">Data Science & ML</h4>
-          <p class="card-content text-sm mb-lg">Libraries for machine learning and statistical analysis</p>
-          <div class="skill-list">
-            <span class="skill-item">NumPy</span>
-            <span class="skill-item">Pandas</span>
-            <span class="skill-item">Scikit-learn</span>
-            <span class="skill-item">Statsmodels</span>
-            <span class="skill-item">PyTorch</span>
-            <span class="skill-item">TensorFlow</span>
-            <span class="skill-item">Matplotlib</span>
-            <span class="skill-item">Seaborn</span>
-          </div>
-        </div>
-
-        <div class="card reveal">
-          <h4 class="card-title">Research Tools</h4>
-          <p class="card-content text-sm mb-lg">Workflow and documentation tools</p>
-          <div class="skill-list">
-            <span class="skill-item">LaTeX</span>
-            <span class="skill-item">Git</span>
-            <span class="skill-item">Jupyter</span>
-            <span class="skill-item">Quarto</span>
-            <span class="skill-item">VS Code</span>
-            <span class="skill-item">Overleaf</span>
-            <span class="skill-item">Zotero</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Quick Links -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2>Explore</h2>
-        <p>Navigate to detailed sections of my academic portfolio</p>
-        <div class="academic-line center"></div>
-      </div>
-
-      <div class="grid grid-4 stagger">
-        <a href="research.html" class="card card-link reveal">
-          <div class="card-icon">📚</div>
-          <h4 class="card-title">Research</h4>
-          <p class="card-content text-sm">Working papers, interests, and publications</p>
-        </a>
-
-        <a href="projects.html" class="card card-link reveal">
-          <div class="card-icon">💻</div>
-          <h4 class="card-title">Projects</h4>
-          <p class="card-content text-sm">Code repositories and software tools</p>
-        </a>
-
-        <a href="coursework.html" class="card card-link reveal">
-          <div class="card-icon">📖</div>
-          <h4 class="card-title">Coursework</h4>
-          <p class="card-content text-sm">Advanced courses and certifications</p>
-        </a>
-
-        <a href="notes.html" class="card card-link reveal">
-          <div class="card-icon">📝</div>
-          <h4 class="card-title">Notes</h4>
-          <p class="card-content text-sm">Technical notes and tutorials</p>
-        </a>
       </div>
     </div>
   </section>
@@ -457,58 +210,42 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
+      <div class="footer-compact">
+        <div class="footer-info">
           <div class="footer-brand-name">Gabriel Saco Alvarado</div>
-          <p>Undergraduate economist and aspiring researcher in Econometrics, Statistics, and Causal Inference.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="GitHub" title="GitHub">📦</a>
-            <a href="#" aria-label="LinkedIn" title="LinkedIn">💼</a>
-            <a href="#" aria-label="Google Scholar" title="Google Scholar">📚</a>
-            <a href="mailto:ga.sacoa@alum.up.edu.pe" aria-label="Email" title="Email">📧</a>
-          </div>
+          <p class="footer-tagline">Econometrics · Causal Inference · Machine Learning</p>
         </div>
 
-        <div>
-          <div class="footer-heading">Navigation</div>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="cv.html">CV</a></li>
-          </ul>
+        <div class="footer-links-row">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="software.html">Software</a>
+          <a href="coursework.html">Coursework</a>
+          <a href="cv.html">CV</a>
+          <a href="contact.html">Contact</a>
         </div>
 
-        <div>
-          <div class="footer-heading">Resources</div>
-          <ul class="footer-links">
-            <li><a href="coursework.html">Coursework</a></li>
-            <li><a href="notes.html">Notes</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <div class="footer-heading">Contact</div>
-          <ul class="footer-links">
-            <li>Lima, Peru</li>
-            <li>+51 994 677 161</li>
-            <li><a href="mailto:ga.sacoa@alum.up.edu.pe">ga.sacoa@alum.up.edu.pe</a></li>
-          </ul>
+        <div class="footer-social">
+          <a href="https://github.com/gsaco" target="_blank" aria-label="GitHub" title="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/gabriel-saco-884b1630b/" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:ga.sacoa@alum.up.edu.pe" aria-label="Email" title="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
+          </a>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 Gabriel Saco Alvarado. All rights reserved.</p>
-        <p>Built with vanilla HTML, CSS & JavaScript</p>
+        <p>&copy; 2025 Gabriel Saco Alvarado</p>
       </div>
     </div>
   </footer>
 
-  <!-- Back to Top Button -->
   <button class="back-to-top" aria-label="Back to top">↑</button>
 
-  <!-- Scripts -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>
