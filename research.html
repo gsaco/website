@@ -40,7 +40,12 @@
   <section class="page-header">
     <div class="container">
       <h1 class="reveal">Research</h1>
-      <p class="lead reveal">My research focuses on developing and applying rigorous econometric methods for causal inference, with emphasis on finite-sample properties and computational aspects.</p>
+      <p class="lead reveal">
+      I work on causal inference with high-dimensional and semiparametric methods, 
+      combining statistical theory and numerical computation to understand when modern 
+      estimators of treatment effects are trustworthy in finite samples.
+    </p>
+
     </div>
   </section>
 
@@ -54,11 +59,11 @@
 
       <div class="featured-paper reveal">
         <div class="featured-paper-header">
-          <span class="featured-paper-badge">📄 Working Paper</span>
+          <span class="featured-paper-badge">Working Paper</span>
         </div>
         <div class="featured-paper-content">
           <h2 class="featured-paper-title">Finite-Sample Failures and Condition-Number Diagnostics in Double Machine Learning</h2>
-          <p class="featured-paper-author">Gabriel Saco Alvarado</p>
+          <p class="featured-paper-author">Gabriel Saco</p>
           <p class="featured-paper-abstract">
             This paper investigates the finite-sample behavior of Double Machine Learning (DML) estimators, 
             identifying conditions under which standard asymptotic approximations fail. I propose novel 
@@ -72,7 +77,6 @@
             <span class="tag">Finite-Sample Theory</span>
             <span class="tag">Condition Numbers</span>
             <span class="tag">Causal Inference</span>
-            <span class="tag">High-Dimensional Statistics</span>
           </div>
           <div class="featured-paper-buttons">
             <a href="assets/doc/condtion-dml.pdf" class="btn btn-primary" target="_blank">
@@ -90,33 +94,24 @@
 
       <div class="featured-paper reveal" style="margin-top: var(--space-xl);">
         <div class="featured-paper-header">
-          <span class="featured-paper-badge">📄 Working Paper</span>
+          <span class="featured-paper-badge">Working Paper</span>
         </div>
         <div class="featured-paper-content">
           <h2 class="featured-paper-title">Economic Freedom Shocks: Global Evidence of Asymmetric and Nonlinear Effects</h2>
-          <p class="featured-paper-author">Gabriel Saco Alvarado</p>
+          <p class="featured-paper-author">Gabriel Saco</p>
           <p class="featured-paper-abstract">
             This paper estimates impulse-response functions of output to discrete economic freedom shocks 
-            using panel Local Projections (Jordà, 2005). For each country <em>i</em> and year <em>t</em>, I define 
-            the cumulative economic freedom shock over a window of length <em>k</em> ∈ {3, 5} as 
-            <em>S<sub>i,t</sub><sup>(k)</sup> = EF<sub>i,t</sub> − EF<sub>i,t−k</sub></em>, where EF is the EFW index. 
-            From this variable, I construct positive shocks <em>S<sup>+</sup></em> (pro-market reform episodes) and 
-            negative shocks <em>S<sup>−</sup></em> (institutional deterioration). The identification leverages 
-            country (μ<sub>i</sub>) and year (τ<sub>t</sub>) fixed effects with parsimonious macro controls, 
-            exploiting quasi-exogenous institutional variation above country-specific thresholds. 
-            The Local Projections specification estimates dynamic responses β<sup>+</sup><sub>h</sub> and 
-            β<sup>−</sup><sub>h</sub> for horizons <em>h</em> = 0, 1, ..., H, revealing asymmetric dynamics: 
-            positive and negative shocks differ in magnitude, speed, and persistence, with effects depending 
-            on shock size and initial institutional/income conditions. A polynomial extension rigorously 
-            characterizes nonlinearities in sign, shock magnitude, and state dependence.
+            using panel Local Projections (Jordà, 2005). I construct cumulative shock measures from the EFW index 
+            and decompose them into positive (pro-market reform) and negative (institutional deterioration) episodes. 
+            The identification leverages country and year fixed effects with parsimonious macro controls, exploiting 
+            quasi-exogenous institutional variation. I allow asymmetric dynamics: positive and negative shocks 
+            differ in magnitude, speed and persistence, with effects depending on shock size and initial institutional conditions.
           </p>
           <div class="featured-paper-tags">
             <span class="tag">Local Projections</span>
-            <span class="tag">Economic Freedom</span>
             <span class="tag">Asymmetric Effects</span>
             <span class="tag">Nonlinear Dynamics</span>
             <span class="tag">Panel Data</span>
-            <span class="tag">Impulse Response</span>
           </div>
           <div class="featured-paper-buttons">
             <a href="assets/doc/lp.pdf" class="btn btn-primary" target="_blank">
@@ -146,24 +141,30 @@
         </div>
         <div class="ra-content">
           <p class="ra-supervisor">
-            Supervisor: <strong>Prof. Joanna Kámiche</strong>
+            Supervisor: <strong>Prof. Joanna Kámiche (PhD UConn)</strong>
           </p>
           <p class="ra-desc">
-            I work on applied microeconomic research projects with focus on policy evaluation 
-            and development economics. My responsibilities include:
+            I work on agricultural economics projects with a strong focus on econometric methods and computation. 
+            I use stochastic frontier models, propensity-score–based causal inference and the integration of satellite 
+            imagery with survey microdata to study productivity and treatment effects. My work includes:
           </p>
           <ul class="ra-tasks">
-            <li>Developing econometric specifications for causal identification</li>
-            <li>Implementing estimation procedures in Stata and Python</li>
-            <li>Conducting robustness checks and sensitivity analysis</li>
-            <li>Preparing data visualizations and summary statistics</li>
-            <li>Literature reviews on methodological advances</li>
+            <li>Specifying and estimating stochastic frontier and related panel models to measure productivity and efficiency</li>
+            <li>Implementing propensity-score methods for causal inference (matching, weighting, and doubly robust estimators)</li>
+            <li>Building reproducible data and estimation pipelines in Stata, R, and Python for large survey and satellite datasets</li>
+            <li>Running Monte Carlo experiments and bootstrap procedures to assess finite-sample performance and robustness</li>
+            <li>Producing diagnostic tables and figures (overlap, balance, sensitivity) and typesetting them in LaTeX</li>
           </ul>
           <div class="ra-tags">
-            <span class="tag">Applied Microeconomics</span>
-            <span class="tag">Policy Evaluation</span>
+            <span class="tag">Causal Inference</span>
+            <span class="tag">Stochastic Frontier Analysis</span>
+            <span class="tag">Econometrics</span>
+            <span class="tag">Satellite Data</span>
+            <span class="tag">Survey Microdata</span>
             <span class="tag">Stata</span>
+            <span class="tag">R</span>
             <span class="tag">Python</span>
+            <span class="tag">LaTeX</span>
           </div>
         </div>
       </div>
@@ -247,8 +248,8 @@
           <ul class="agenda-list">
             <li>Heterogeneous effects of education policy interventions</li>
             <li>Optimal targeting of social programs using CATE</li>
-            <li>Causal effects of credit access on firm outcomes</li>
-            <li>Labor market effects of minimum wage with spillovers</li>
+            <li>Deep Learning in equilibrium models</li>
+            <li>Machine Learning in Economics</li>
           </ul>
         </div>
       </div>

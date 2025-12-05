@@ -601,7 +601,7 @@ pre code {
   font-size: var(--fs-xs);
   font-weight: var(--fw-medium);
   color: var(--accent-primary);
-  margin: 0.5cm 0 var(--space-xl);
+  margin: 1cm 0 var(--space-xl);
   box-shadow: var(--shadow-sm);
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -2326,7 +2326,7 @@ button:focus:not(:focus-visible) {
   flex-wrap: wrap;
   gap: var(--space-lg);
   margin-top: var(--space-lg);
-  margin-bottom: 0.5cm; /* Add 0.5cm bottom spacing after contact info */
+  margin-bottom: 1cm;
 }
 
 .hero-contact-item {
@@ -2355,7 +2355,8 @@ button:focus:not(:focus-visible) {
   gap: var(--space-md);
   justify-content: center;
   width: 100%;
-  margin-top: var(--space-md);
+  /* add explicit separation so badges are never visually over the photo */
+  margin-top: 1cm; /* increased from var(--space-md) */
 }
 
 .credential-badge {
@@ -2780,6 +2781,23 @@ button:focus:not(:focus-visible) {
   font-size: var(--fs-xs);
   color: var(--text-muted);
   font-style: italic;
+}
+
+/* Data Types Section in Repo Cards */
+.repo-data-types {
+  margin: var(--space-md) 0;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-tertiary);
+  border-left: 3px solid var(--accent-primary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: var(--fs-xs);
+  color: var(--text-secondary);
+  line-height: var(--lh-relaxed);
+}
+
+.repo-data-types strong {
+  color: var(--accent-primary);
+  font-weight: var(--fw-semibold);
 }
 
 /* Tech Grid */

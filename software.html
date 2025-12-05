@@ -105,9 +105,9 @@
               <span class="tech-desc">Interactive computing, notebooks</span>
             </div>
             <div class="tech-card">
-              <span class="tech-emoji">📄</span>
-              <span class="tech-label">Quarto</span>
-              <span class="tech-desc">Reproducible reports, presentations</span>
+              <span class="tech-emoji">🌐</span>
+              <span class="tech-label">Hugging Face</span>
+              <span class="tech-desc">Data access, integration with external services</span>
             </div>
           </div>
         </div>
@@ -115,125 +115,265 @@
     </div>
   </section>
 
-  <!-- Repositories -->
+  <!-- Repositories: Causal ML & Econometrics -->
   <section class="section" style="background: var(--bg-tertiary);">
     <div class="container">
       <div class="section-header reveal">
-        <h2>Repositories</h2>
-        <p>Selected code projects and research implementations</p>
+        <h2>Causal ML & Econometrics</h2>
+        <p>Double Machine Learning, treatment effects, and causal inference implementations</p>
         <div class="academic-line center"></div>
       </div>
 
       <div class="grid grid-2 stagger">
-        <!-- DML Project -->
+        <!-- DML_NN -->
         <div class="card repo-card reveal">
           <div class="repo-header">
-            <span class="repo-lang python">Python</span>
-            <a href="https://github.com/gsaco" class="repo-link" target="_blank">View →</a>
+            <span class="repo-lang jupyter">100% Jupyter</span>
+            <a href="https://github.com/gsaco/DML_NN" class="repo-link" target="_blank">View →</a>
           </div>
-          <h3 class="card-title">dml-diagnostics</h3>
+          <h3 class="card-title">DML_NN</h3>
           <p class="card-content">
-            Diagnostic tools for Double Machine Learning estimators. Implements condition-number 
-            diagnostics, finite-sample bias detection, and sensitivity analysis for DML-based 
-            causal inference.
+            Double/Debiased Machine Learning with neural networks. Compares activation functions (ReLU, Sigmoid, Tanh) 
+            across 1-3 layer architectures. Implements cross-fitting (K=2 folds) for valid causal inference on 
+            partially linear models. Evaluates 48 model combinations including OLS, LASSO, Random Forest, and NNs.
           </p>
           <div class="card-tags">
             <span class="tag">Double ML</span>
-            <span class="tag">Diagnostics</span>
+            <span class="tag">Neural Networks</span>
+            <span class="tag">Cross-fitting</span>
             <span class="tag">Causal Inference</span>
           </div>
-          <div class="repo-meta">
-            <span>Related to working paper</span>
+        </div>
+
+        <!-- Lasso_Potential_Outcomes_RCTs -->
+        <div class="card repo-card reveal">
+          <div class="repo-header">
+            <span class="repo-lang jupyter">100% Jupyter</span>
+            <a href="https://github.com/gsaco/Lasso_Potential_Outcomes_RCTs" class="repo-link" target="_blank">View →</a>
+          </div>
+          <h3 class="card-title">Lasso_Potential_Outcomes_RCTs</h3>
+          <p class="card-content">
+            LASSO-assisted covariate adjustment for RCTs using the Potential Outcomes Framework. 
+            Compares low-dimensional (5 features) vs. high-dimensional (400+ engineered features) specifications. 
+            Implements cross-validation for regularization, ATE estimation, and randomization inference.
+          </p>
+          <div class="card-tags">
+            <span class="tag">LASSO</span>
+            <span class="tag">Potential Outcomes</span>
+            <span class="tag">RCT</span>
+            <span class="tag">ATE</span>
           </div>
         </div>
 
-        <!-- Monte Carlo Simulations -->
+        <!-- Decision_Trees -->
         <div class="card repo-card reveal">
           <div class="repo-header">
-            <span class="repo-lang python">Python</span>
-            <a href="https://github.com/gsaco" class="repo-link" target="_blank">View →</a>
+            <span class="repo-lang jupyter">100% Jupyter</span>
+            <a href="https://github.com/gsaco/Decision_Trees" class="repo-link" target="_blank">View →</a>
           </div>
-          <h3 class="card-title">econometrics-simulations</h3>
+          <h3 class="card-title">Decision_Trees</h3>
           <p class="card-content">
-            Monte Carlo simulation studies for econometric estimators. Coverage probability 
-            analysis, bias-variance decomposition, and comparative performance evaluation.
+            Classification Trees (CART), Causal Forests, and Random Forests for heterogeneous treatment effects. 
+            Implements 4-fold CV with complexity tuning, tree pruning (α = 0.0001643517), and CATE estimation 
+            with tercile stratification for patient response groups.
           </p>
           <div class="card-tags">
-            <span class="tag">Monte Carlo</span>
-            <span class="tag">Simulation</span>
-            <span class="tag">Inference</span>
-          </div>
-        </div>
-
-        <!-- Causal Forests -->
-        <div class="card repo-card reveal">
-          <div class="repo-header">
-            <span class="repo-lang r">R</span>
-            <a href="https://github.com/gsaco" class="repo-link" target="_blank">View →</a>
-          </div>
-          <h3 class="card-title">cate-estimation</h3>
-          <p class="card-content">
-            Tools for Conditional Average Treatment Effect estimation. Wrappers for causal forests, 
-            meta-learners, and visualization utilities for heterogeneous treatment effects.
-          </p>
-          <div class="card-tags">
-            <span class="tag">CATE</span>
+            <span class="tag">CART</span>
             <span class="tag">Causal Forests</span>
-            <span class="tag">HTE</span>
+            <span class="tag">CATE</span>
+            <span class="tag">Cross-validation</span>
           </div>
         </div>
 
-        <!-- Replication Files -->
+        <!-- DAGs_CausalML -->
+        <div class="card repo-card reveal">
+          <div class="repo-header">
+            <span class="repo-lang jupyter">100% Jupyter</span>
+            <a href="https://github.com/gsaco/DAGs_CausalML" class="repo-link" target="_blank">View →</a>
+          </div>
+          <h3 class="card-title">DAGs_CausalML</h3>
+          <p class="card-content">
+            Directed Acyclic Graphs for causal structure analysis. Demonstrates identification of confounders, 
+            mediators, and colliders. Includes Simpson's Paradox examples, bias quantification (0.01–1.01 range), 
+            and regression analysis with selective control strategies.
+          </p>
+          <div class="card-tags">
+            <span class="tag">DAGs</span>
+            <span class="tag">Simpson's Paradox</span>
+            <span class="tag">Confounders</span>
+            <span class="tag">Collider Bias</span>
+          </div>
+        </div>
+
+        <!-- High_Dimensional_Linear_Models -->
+        <div class="card repo-card reveal">
+          <div class="repo-header">
+            <span class="repo-lang jupyter">98.4% Jupyter · 1.6% TeX</span>
+            <a href="https://github.com/gsaco/High_Dimensional_Linear_Models" class="repo-link" target="_blank">View →</a>
+          </div>
+          <h3 class="card-title">High_Dimensional_Linear_Models</h3>
+          <p class="card-content">
+            Frisch-Waugh-Lovell theorem and Hedonic Pricing Regression with cross-language verification (Python, R, Julia). 
+            Features polynomial terms, binary indicators, last-digit dummies, and train-test validation 
+            for hedonic price premium estimation.
+          </p>
+          <div class="card-tags">
+            <span class="tag">FWL Theorem</span>
+            <span class="tag">Hedonic Pricing</span>
+            <span class="tag">Feature Engineering</span>
+            <span class="tag">Multi-language</span>
+          </div>
+        </div>
+
+        <!-- CSDiD -->
         <div class="card repo-card reveal">
           <div class="repo-header">
             <span class="repo-lang jupyter">Jupyter</span>
-            <a href="https://github.com/gsaco" class="repo-link" target="_blank">View →</a>
+            <a href="https://github.com/gsaco/CSDiD" class="repo-link" target="_blank">View →</a>
           </div>
-          <h3 class="card-title">paper-replications</h3>
+          <h3 class="card-title">CSDiD</h3>
           <p class="card-content">
-            Replication notebooks for influential econometrics papers. Detailed implementations 
-            with explanatory notes covering Angrist & Pischke, Chernozhukov et al., and more.
+            Callaway-Sant'Anna Difference-in-Differences methodology for dynamic treatment effects 
+            with staggered adoption. Implements group-time average treatment effects and aggregation 
+            procedures for policy evaluation.
           </p>
           <div class="card-tags">
-            <span class="tag">Replications</span>
-            <span class="tag">Education</span>
-            <span class="tag">Notebooks</span>
+            <span class="tag">Difference-in-Differences</span>
+            <span class="tag">Staggered Adoption</span>
+            <span class="tag">Dynamic Effects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Repositories: Deep Learning & NLP -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Deep Learning & NLP</h2>
+        <p>Transformer fine-tuning, multi-agent systems, and semantic search</p>
+        <div class="academic-line center"></div>
+      </div>
+
+      <div class="grid grid-2 stagger">
+        <!-- News_Classification-lab -->
+        <div class="card repo-card reveal">
+          <div class="repo-header">
+            <span class="repo-lang jupyter">99.1% Jupyter · 0.9% Python</span>
+            <a href="https://github.com/gsaco/News_Classification-lab" class="repo-link" target="_blank">View →</a>
+          </div>
+          <h3 class="card-title">News_Classification-lab</h3>
+          <p class="card-content">
+            Transformer fine-tuning (RoBERTa, DeBERTa, ModernBERT) for multi-class news classification. 
+            70/15/15 train-val-test split, AdamW optimizer (lr: 5e-5), early stopping on F1-score. 
+            Includes cross-lingual evaluation: English AG News → Spanish RPP news.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Transformers</span>
+            <span class="tag">RoBERTa</span>
+            <span class="tag">Fine-tuning</span>
+            <span class="tag">Cross-lingual</span>
           </div>
         </div>
 
-        <!-- Numerical Methods -->
+        <!-- multi-agent_research-lab -->
         <div class="card repo-card reveal">
           <div class="repo-header">
-            <span class="repo-lang julia">Julia</span>
-            <a href="https://github.com/gsaco" class="repo-link" target="_blank">View →</a>
+            <span class="repo-lang jupyter">57.8% Jupyter · 42.2% Python</span>
+            <a href="https://github.com/gsaco/multi-agent_research-lab" class="repo-link" target="_blank">View →</a>
           </div>
-          <h3 class="card-title">numerical-econ</h3>
+          <h3 class="card-title">multi-agent_research-lab</h3>
           <p class="card-content">
-            Numerical methods for economics: optimization algorithms, root-finding, 
-            numerical integration, and ODE/PDE solvers for economic models.
+            CrewAI multi-agent orchestration with specialized agents: Researcher (DuckDuckGo web search), 
+            Writer (Hugging Face summarization), and Reviewer (coherence/factuality evaluation). 
+            Produces structured 500-word markdown research summaries.
           </p>
           <div class="card-tags">
-            <span class="tag">Numerical Methods</span>
-            <span class="tag">Optimization</span>
-            <span class="tag">Computation</span>
+            <span class="tag">Multi-Agent</span>
+            <span class="tag">CrewAI</span>
+            <span class="tag">LLM</span>
+            <span class="tag">Agentic Workflow</span>
           </div>
         </div>
 
-        <!-- Bootstrap Methods -->
+        <!-- news-query_RPP-lab -->
         <div class="card repo-card reveal">
           <div class="repo-header">
-            <span class="repo-lang python">Python</span>
-            <a href="https://github.com/gsaco" class="repo-link" target="_blank">View →</a>
+            <span class="repo-lang jupyter">85.6% Jupyter · 14.4% Python</span>
+            <a href="https://github.com/gsaco/news-query_RPP-lab" class="repo-link" target="_blank">View →</a>
           </div>
-          <h3 class="card-title">bootstrap-inference</h3>
+          <h3 class="card-title">news-query_RPP-lab</h3>
           <p class="card-content">
-            Bootstrap methods for econometric inference. Implementations of wild bootstrap, 
-            block bootstrap for time series, and cluster-robust bootstrap procedures.
+            Real-time RSS ingestion with semantic search pipeline. Uses sentence transformers (384-dim embeddings), 
+            ChromaDB vector database, and LangChain orchestration. Implements tokenization (tiktoken), 
+            vector similarity search, and retrieval for Peruvian news.
           </p>
           <div class="card-tags">
-            <span class="tag">Bootstrap</span>
-            <span class="tag">Inference</span>
-            <span class="tag">Robust SE</span>
+            <span class="tag">Semantic Search</span>
+            <span class="tag">Embeddings</span>
+            <span class="tag">ChromaDB</span>
+            <span class="tag">LangChain</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Repositories: Geospatial Analysis & Public Policy -->
+  <section class="section" style="background: var(--bg-tertiary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Geospatial Analysis & Public Policy</h2>
+        <p>GIS operations, raster analysis, and policy-oriented spatial research</p>
+        <div class="academic-line center"></div>
+      </div>
+
+      <div class="grid grid-2 stagger">
+        <!-- Hospitals-Access-Peru -->
+        <div class="card repo-card reveal">
+          <div class="repo-header">
+            <span class="repo-lang jupyter">99.9% Jupyter · 0.1% Python</span>
+            <a href="https://github.com/gsaco/Hospitals-Access-Peru" class="repo-link" target="_blank">View →</a>
+          </div>
+          <h3 class="card-title">Hospitals-Access-Peru</h3>
+          <p class="card-content">
+            GIS analysis of public hospital accessibility in Peru using GeoPandas, Shapely, and Rasterio. 
+            Analyzes 2,500+ operational hospitals (MINSA, ESSALUD, FFAA, PNP), spatial joins with 10km buffer analysis, 
+            and choropleth mapping by district. Interactive Streamlit dashboard with Plotly and Folium.
+          </p>
+          <div class="card-tags">
+            <span class="tag">GeoPandas</span>
+            <span class="tag">Healthcare Access</span>
+            <span class="tag">Spatial Analysis</span>
+            <span class="tag">Streamlit</span>
+          </div>
+          <div class="repo-meta">
+            <span>Key finding: 40% of districts have no public hospitals · 10x regional coverage disparity</span>
+          </div>
+        </div>
+
+        <!-- Minimum-Temperature-Raster -->
+        <div class="card repo-card reveal">
+          <div class="repo-header">
+            <span class="repo-lang jupyter">98.5% Jupyter · 1.5% Python</span>
+            <a href="https://github.com/gsaco/Minimum-Temperature-Raster" class="repo-link" target="_blank">View →</a>
+          </div>
+          <h3 class="card-title">Minimum-Temperature-Raster</h3>
+          <p class="card-content">
+            GeoTIFF raster analysis for climate risk assessment using Rasterio and Rasterstats. 
+            Calculates zonal statistics (mean, min, max, std, p10/p90) and 4-tier frost risk classification. 
+            Includes public policy framework: thermal housing (S/ 1.25B), agricultural protection (S/ 600M), 
+            educational continuity (S/ 250M).
+          </p>
+          <div class="card-tags">
+            <span class="tag">Raster Analysis</span>
+            <span class="tag">Climate Risk</span>
+            <span class="tag">Zonal Statistics</span>
+            <span class="tag">Policy Framework</span>
+          </div>
+          <div class="repo-meta">
+            <span>Risk thresholds: Very High &lt;-10°C · High &lt;0°C · Medium &lt;5°C</span>
           </div>
         </div>
       </div>
