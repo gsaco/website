@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research — Gabriel Saco Alvarado</title>
+  <meta name="description" content="Research interests, working papers, and RA projects in econometrics, causal inference, and statistical learning.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="bg-animated"></div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="brand-icon">GS</span>
+        <span>Gabriel Saco</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navbar-menu">
+        <a href="index.html" class="navbar-link">Home</a>
+        <a href="research.html" class="navbar-link active">Research</a>
+        <a href="software.html" class="navbar-link">Software</a>
+        <a href="coursework.html" class="navbar-link">Coursework</a>
+        <a href="cv.html" class="navbar-link">CV</a>
+        <a href="contact.html" class="navbar-link">Contact</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="reveal">Research</h1>
+      <p class="lead reveal">
+      I work on causal inference with high-dimensional and semiparametric methods, 
+      combining statistical theory and numerical computation to understand when modern 
+      estimators of treatment effects are trustworthy in finite samples.
+    </p>
+
+    </div>
+  </section>
+
+  <!-- Working Papers -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: left;">
+        <h2>Working Papers</h2>
+        <div class="academic-line"></div>
+      </div>
+
+      <div class="featured-paper reveal">
+        <div class="featured-paper-header">
+          <span class="featured-paper-badge">Working Paper</span>
+        </div>
+        <div class="featured-paper-content">
+          <h2 class="featured-paper-title">Finite-Sample Failures and Condition-Number Diagnostics in Double Machine Learning</h2>
+          <p class="featured-paper-author">Gabriel Saco</p>
+          <p class="featured-paper-abstract">
+            This paper investigates the finite-sample behavior of Double Machine Learning (DML) estimators, 
+            identifying conditions under which standard asymptotic approximations fail. I propose novel 
+            condition-number diagnostics to detect and address numerical instabilities in high-dimensional 
+            causal inference settings. The analysis shows that ill-conditioning in the first-stage estimation 
+            can lead to severely distorted inference even with large samples, and provides practical guidance 
+            for practitioners.
+          </p>
+          <div class="featured-paper-tags">
+            <span class="tag">Double Machine Learning</span>
+            <span class="tag">Finite-Sample Theory</span>
+            <span class="tag">Condition Numbers</span>
+            <span class="tag">Causal Inference</span>
+          </div>
+          <div class="featured-paper-buttons">
+            <a href="assets/doc/condtion-dml.pdf" class="btn btn-primary" target="_blank">
+              📑 Read Paper
+            </a>
+            <a href="assets/doc/derivations.pdf" class="btn btn-secondary" target="_blank">
+              📐 Derivations
+            </a>
+            <a href="software.html" class="btn btn-outline">
+              💻 Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="featured-paper reveal" style="margin-top: var(--space-xl);">
+        <div class="featured-paper-header">
+          <span class="featured-paper-badge">Working Paper</span>
+        </div>
+        <div class="featured-paper-content">
+          <h2 class="featured-paper-title">Economic Freedom Shocks: Global Evidence of Asymmetric and Nonlinear Effects</h2>
+          <p class="featured-paper-author">Gabriel Saco</p>
+          <p class="featured-paper-abstract">
+            This paper estimates impulse-response functions of output to discrete economic freedom shocks 
+            using panel Local Projections (Jordà, 2005). I construct cumulative shock measures from the EFW index 
+            and decompose them into positive (pro-market reform) and negative (institutional deterioration) episodes. 
+            The identification leverages country and year fixed effects with parsimonious macro controls, exploiting 
+            quasi-exogenous institutional variation. I allow asymmetric dynamics: positive and negative shocks 
+            differ in magnitude, speed and persistence, with effects depending on shock size and initial institutional conditions.
+          </p>
+          <div class="featured-paper-tags">
+            <span class="tag">Local Projections</span>
+            <span class="tag">Asymmetric Effects</span>
+            <span class="tag">Nonlinear Dynamics</span>
+            <span class="tag">Panel Data</span>
+          </div>
+          <div class="featured-paper-buttons">
+            <a href="assets/doc/lp.pdf" class="btn btn-primary" target="_blank">
+              📑 Read Paper
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Assistantship -->
+  <section class="section" style="background: var(--bg-tertiary);">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: left;">
+        <h2>Research Assistantship</h2>
+        <div class="academic-line"></div>
+      </div>
+
+      <div class="ra-card reveal">
+        <div class="ra-header">
+          <div>
+            <h3 class="ra-title">Research Assistant</h3>
+            <p class="ra-org">Centro de Investigación, Universidad del Pacífico (CIUP)</p>
+          </div>
+          <span class="ra-date">Jan 2025 – Present</span>
+        </div>
+        <div class="ra-content">
+          <p class="ra-supervisor">
+            Supervisor: <strong>Prof. Joanna Kámiche (PhD UConn)</strong>
+          </p>
+          <p class="ra-desc">
+            I work on agricultural economics projects with a strong focus on econometric methods and computation. 
+            I use stochastic frontier models, propensity-score–based causal inference and the integration of satellite 
+            imagery with survey microdata to study productivity and treatment effects. My work includes:
+          </p>
+          <ul class="ra-tasks">
+            <li>Specifying and estimating stochastic frontier and related panel models to measure productivity and efficiency</li>
+            <li>Implementing propensity-score methods for causal inference (matching, weighting, and doubly robust estimators)</li>
+            <li>Building reproducible data and estimation pipelines in Stata, R, and Python for large survey and satellite datasets</li>
+            <li>Running Monte Carlo experiments and bootstrap procedures to assess finite-sample performance and robustness</li>
+            <li>Producing diagnostic tables and figures (overlap, balance, sensitivity) and typesetting them in LaTeX</li>
+          </ul>
+          <div class="ra-tags">
+            <span class="tag">Causal Inference</span>
+            <span class="tag">Stochastic Frontier Analysis</span>
+            <span class="tag">Econometrics</span>
+            <span class="tag">Satellite Data</span>
+            <span class="tag">Survey Microdata</span>
+            <span class="tag">Stata</span>
+            <span class="tag">R</span>
+            <span class="tag">Python</span>
+            <span class="tag">LaTeX</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Interests -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Research Interests</h2>
+        <p>Core areas where I aim to contribute original research</p>
+        <div class="academic-line center"></div>
+      </div>
+
+      <div class="grid grid-3 stagger">
+        <div class="card reveal">
+          <h3 class="card-title" style="color: var(--accent-primary);">Econometrics</h3>
+          <p class="card-content">
+            My primary interest lies in causal inference methodology. I work on:
+          </p>
+          <ul class="interest-list">
+            <li><strong>Double/Debiased ML:</strong> Finite-sample properties, regularization, cross-fitting</li>
+            <li><strong>Instrumental Variables:</strong> Weak identification, many instruments, JIVE</li>
+            <li><strong>Panel Methods:</strong> Diff-in-diff with staggered adoption, synthetic control</li>
+            <li><strong>Regression Discontinuity:</strong> Bandwidth selection, local polynomial estimation</li>
+          </ul>
+        </div>
+
+        <div class="card reveal">
+          <h3 class="card-title" style="color: var(--accent-primary);">Statistical Theory</h3>
+          <p class="card-content">
+            I am interested in the theoretical foundations of modern inference:
+          </p>
+          <ul class="interest-list">
+            <li><strong>Semiparametric Efficiency:</strong> Influence functions, efficient estimation</li>
+            <li><strong>High-Dimensional Inference:</strong> Post-selection inference, debiased LASSO</li>
+            <li><strong>Asymptotic Theory:</strong> Uniform convergence, empirical processes</li>
+            <li><strong>Bootstrap Methods:</strong> Wild bootstrap, cluster-robust inference</li>
+          </ul>
+        </div>
+
+        <div class="card reveal">
+          <h3 class="card-title" style="color: var(--accent-primary);">Causal Machine Learning</h3>
+          <p class="card-content">
+            I work on methods combining ML with causal inference:
+          </p>
+          <ul class="interest-list">
+            <li><strong>Heterogeneous Effects:</strong> CATE estimation, causal forests, meta-learners</li>
+            <li><strong>Policy Learning:</strong> Optimal treatment rules, regret bounds</li>
+            <li><strong>Causal Discovery:</strong> Structure learning, interventional data</li>
+            <li><strong>Representation Learning:</strong> Causal embeddings, disentanglement</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Agenda -->
+  <section class="section" style="background: var(--bg-tertiary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Research Agenda</h2>
+        <p>Directions I aim to pursue in graduate studies</p>
+        <div class="academic-line center"></div>
+      </div>
+
+      <div class="grid grid-2 stagger">
+        <div class="card reveal">
+          <h4 class="card-title">Methodological</h4>
+          <ul class="agenda-list">
+            <li>Finite-sample corrections for DML in ill-conditioned settings</li>
+            <li>Valid inference after cross-validation-based model selection</li>
+            <li>Bootstrap methods for high-dimensional causal estimators</li>
+            <li>Sensitivity analysis for unobserved confounding with ML</li>
+          </ul>
+        </div>
+
+        <div class="card reveal">
+          <h4 class="card-title">Applied</h4>
+          <ul class="agenda-list">
+            <li>Heterogeneous effects of education policy interventions</li>
+            <li>Optimal targeting of social programs using CATE</li>
+            <li>Deep Learning in equilibrium models</li>
+            <li>Machine Learning in Economics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-compact">
+        <div class="footer-info">
+          <div class="footer-brand-name">Gabriel Saco Alvarado</div>
+          <p class="footer-tagline">Econometrics · Causal Inference · Machine Learning</p>
+        </div>
+
+        <div class="footer-links-row">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="software.html">Software</a>
+          <a href="coursework.html">Coursework</a>
+          <a href="cv.html">CV</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://github.com/gsaco" target="_blank" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/gabriel-saco-884b1630b/" target="_blank" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:ga.sacoa@alum.up.edu.pe" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Gabriel Saco Alvarado</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
