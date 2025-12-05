@@ -601,7 +601,7 @@ pre code {
   font-size: var(--fs-xs);
   font-weight: var(--fw-medium);
   color: var(--accent-primary);
-  margin-bottom: var(--space-xl);
+  margin: 0.5cm 0 var(--space-xl);
   box-shadow: var(--shadow-sm);
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -675,6 +675,7 @@ pre code {
 /* Hero Image — Professional Photo */
 .hero-image {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -798,7 +799,7 @@ pre code {
   .hero-fields { justify-content: center; }
   .hero-badges { justify-content: center; }
   .credential-item { text-align: center; }
-  .hero-affiliation { margin: 0 auto var(--space-xl); }
+  .hero-affiliation { margin: 0.5cm auto var(--space-xl); }
   .expertise-grid { justify-content: center; }
 }
 
@@ -2325,6 +2326,7 @@ button:focus:not(:focus-visible) {
   flex-wrap: wrap;
   gap: var(--space-lg);
   margin-top: var(--space-lg);
+  margin-bottom: 0.5cm; /* Add 0.5cm bottom spacing after contact info */
 }
 
 .hero-contact-item {
@@ -2348,12 +2350,12 @@ button:focus:not(:focus-visible) {
 
 /* Hero Credentials Overlay */
 .hero-credentials-overlay {
-  position: absolute;
-  bottom: var(--space-lg);
-  left: var(--space-lg);
-  right: var(--space-lg);
+  position: static; /* place credentials below the image */
   display: flex;
   gap: var(--space-md);
+  justify-content: center;
+  width: 100%;
+  margin-top: var(--space-md);
 }
 
 .credential-badge {
